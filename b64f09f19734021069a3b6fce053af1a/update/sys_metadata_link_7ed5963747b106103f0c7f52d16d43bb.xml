@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>b0ac87979795021069a3b6fce053af9c</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_62500_mealplan_recipe">
+    <x_62500_mealplan_recipe action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cook_time>1970-01-01 00:20:00</cook_time>
+        <cooking_instructions>1. In a small bowl, whisk together soy sauce, brown sugar, and cornstarch. 2. Heat olive oil in a large skillet over medium-high heat. 3. Add garlic and ginger, cook until fragrant. 4. Add beef slices and cook until browned. 5. Stir in broccoli florets and sauce mixture. 6. Cook until broccoli is tender and sauce has thickened. 7. Serve over cooked rice, garnished with toasted sesame seeds.</cooking_instructions>
+        <cuisine display_value="Asian">6b314b979755021069a3b6fce053af78</cuisine>
+        <diet/>
+        <effort display_value="Easy">fae0a76e9730021069a3b6fce053af3e</effort>
+        <image/>
+        <ingredients>Beef Sirloin (300g, thinly sliced), Broc</ingredients>
+        <meal_type display_value="Dinner">ca8516df9751021069a3b6fce053afdf</meal_type>
+        <name>Beef and Broccoli Stir Fry</name>
+        <nutrition>Calories: 400, Protein: 25g, Fat: 15g, Carbs: 35g</nutrition>
+        <owned_by display_value="MP Admin">cbb877e697b0021069a3b6fce053af41</owned_by>
+        <pre_cook>false</pre_cook>
+        <prep_instructions>1. Slice beef thinly. 2. Wash and chop broccoli. 3. Mince garlic and ginger.</prep_instructions>
+        <prep_required>false</prep_required>
+        <prep_time>1970-01-01 00:15:00</prep_time>
+        <serving>2</serving>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 01:00:29</sys_created_on>
+        <sys_id>b0ac87979795021069a3b6fce053af9c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-01 06:39:10</sys_updated_on>
+        <time_of_day/>
+    </x_62500_mealplan_recipe>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-03 06:49:31</sys_created_on>
+        <sys_id>7ed5963747b106103f0c7f52d16d43bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Beef and Broccoli Stir Fry</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_metadata_link_7ed5963747b106103f0c7f52d16d43bb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 06:49:31</sys_updated_on>
+        <tablename>x_62500_mealplan_recipe</tablename>
+    </sys_metadata_link>
+</record_update>

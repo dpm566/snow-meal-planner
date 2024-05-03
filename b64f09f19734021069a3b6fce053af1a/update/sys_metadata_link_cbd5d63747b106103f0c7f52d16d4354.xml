@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>b4ac87979795021069a3b6fce053afa1</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_62500_mealplan_recipe">
+    <x_62500_mealplan_recipe action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cook_time>1970-01-01 00:20:00</cook_time>
+        <cooking_instructions>1. SautÃ© onion, garlic, and bell pepper until softened. 2. Add tomato sauce and spices, simmer for 10. 3. Make wells in the sauce and crack eggs into them. 4. Cover and cook until eggs are set. 5. Sprinkle with feta cheese and parsley, serve with bread.</cooking_instructions>
+        <cuisine display_value="Middle Eastern">6661cb979755021069a3b6fce053afc5</cuisine>
+        <diet>bca1c6979711021069a3b6fce053af90</diet>
+        <effort display_value="Moderate">bee0a76e9730021069a3b6fce053af3e</effort>
+        <image/>
+        <ingredients>Eggs (4), Tomato Sauce (2 cups), Bell Pe</ingredients>
+        <meal_type display_value="Breakfast">b08512df9751021069a3b6fce053afd4</meal_type>
+        <name>Shakshuka</name>
+        <nutrition>Calories: 300, Protein: 20g, Fat: 15g, Carbs: 20g</nutrition>
+        <owned_by display_value="MP Admin">cbb877e697b0021069a3b6fce053af41</owned_by>
+        <pre_cook>false</pre_cook>
+        <prep_instructions>1. Chop onion, garlic, and bell pepper.</prep_instructions>
+        <prep_required>false</prep_required>
+        <prep_time>1970-01-01 00:15:00</prep_time>
+        <serving>2</serving>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 01:00:29</sys_created_on>
+        <sys_id>b4ac87979795021069a3b6fce053afa1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-01 06:39:11</sys_updated_on>
+        <time_of_day/>
+    </x_62500_mealplan_recipe>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-03 06:49:31</sys_created_on>
+        <sys_id>cbd5d63747b106103f0c7f52d16d4354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Shakshuka</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_metadata_link_cbd5d63747b106103f0c7f52d16d4354</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 06:49:31</sys_updated_on>
+        <tablename>x_62500_mealplan_recipe</tablename>
+    </sys_metadata_link>
+</record_update>

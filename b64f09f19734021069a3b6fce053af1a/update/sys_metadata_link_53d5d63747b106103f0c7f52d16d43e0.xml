@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>425917d797d5021069a3b6fce053afda</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_62500_mealplan_recipe">
+    <x_62500_mealplan_recipe action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cook_time>1970-01-01 00:45:00</cook_time>
+        <cooking_instructions>1. In a bowl, mix milk powder, all-purpose flour, baking powder, and ghee. 2. Gradually add milk to form a soft dough. 3. Divide the dough into small balls and roll them into smooth balls. 4. Heat ghee in a deep frying pan over medium heat. 5. Fry the dough balls until golden brown. 6. In a separate pan, combine sugar, water, cardamom powder, and saffron strands. Bring to a boil and simmer for 5 to make the sugar syrup. 7. Remove the fried dough balls from the ghee and drain excess oil. 8. Drop them into the sugar syrup and let them soak for at least 2 hours. 9. Garnish with chopped pistachios before serving.</cooking_instructions>
+        <cuisine display_value="Indian">8f495a179791021069a3b6fce053afcf</cuisine>
+        <diet>bca1c6979711021069a3b6fce053af90</diet>
+        <effort/>
+        <image/>
+        <ingredients/>
+        <meal_type/>
+        <name>Gulab Jamun</name>
+        <nutrition>Calories: 200, Protein: 5g, Fat: 10g, Carbs: 25g</nutrition>
+        <owned_by display_value="MP Admin">cbb877e697b0021069a3b6fce053af41</owned_by>
+        <pre_cook>false</pre_cook>
+        <prep_instructions>1. Mix milk powder, all-purpose flour, baking powder, and ghee. 2. Prepare sugar syrup.</prep_instructions>
+        <prep_required>false</prep_required>
+        <prep_time>1970-01-01 00:30:00</prep_time>
+        <serving>2</serving>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 01:56:01</sys_created_on>
+        <sys_id>425917d797d5021069a3b6fce053afda</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-01 06:39:10</sys_updated_on>
+        <time_of_day/>
+    </x_62500_mealplan_recipe>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-03 06:49:33</sys_created_on>
+        <sys_id>53d5d63747b106103f0c7f52d16d43e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gulab Jamun</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_metadata_link_53d5d63747b106103f0c7f52d16d43e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 06:49:33</sys_updated_on>
+        <tablename>x_62500_mealplan_recipe</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ca5917d797d5021069a3b6fce053afdc</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_62500_mealplan_recipe">
+    <x_62500_mealplan_recipe action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cook_time>1970-01-01 00:15:00</cook_time>
+        <cooking_instructions>1. In a bowl, mix coconut milk, peanut butter, soy sauce, brown sugar, curry powder, minced garlic, and lime juice to make the marinade. 2. Thread sliced chicken thighs onto bamboo skewers and place in a shallow dish. 3. Pour the marinade over the chicken skewers, making sure they are fully coated. 4. Cover and refrigerate for at least 2 hours, or overnight. 5. Preheat grill to medium-high heat. 6. Brush grill grates with vegetable oil to prevent sticking. 7. Grill chicken skewers for 3-4 on each side, until cooked through and slightly charred. 8. Serve hot.</cooking_instructions>
+        <cuisine display_value="Thai">8b495a179791021069a3b6fce053afd0</cuisine>
+        <diet/>
+        <effort display_value="Moderate">bee0a76e9730021069a3b6fce053af3e</effort>
+        <image/>
+        <ingredients/>
+        <meal_type display_value="Appetizer">91508fd39755021069a3b6fce053af8b</meal_type>
+        <name>Chicken Satay</name>
+        <nutrition>Calories: 400, Protein: 25g, Fat: 30g, Carbs: 15g</nutrition>
+        <owned_by display_value="MP Admin">cbb877e697b0021069a3b6fce053af41</owned_by>
+        <pre_cook>false</pre_cook>
+        <prep_instructions>1. Slice chicken thighs. 2. Soak bamboo skewers in water for 30 before using.</prep_instructions>
+        <prep_required>false</prep_required>
+        <prep_time>1970-01-01 00:10:00</prep_time>
+        <serving>2</serving>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 01:56:01</sys_created_on>
+        <sys_id>ca5917d797d5021069a3b6fce053afdc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-01 06:39:11</sys_updated_on>
+        <time_of_day/>
+    </x_62500_mealplan_recipe>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-03 06:49:35</sys_created_on>
+        <sys_id>b7d51a3747b106103f0c7f52d16d436a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Chicken Satay</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_metadata_link_b7d51a3747b106103f0c7f52d16d436a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 06:49:35</sys_updated_on>
+        <tablename>x_62500_mealplan_recipe</tablename>
+    </sys_metadata_link>
+</record_update>

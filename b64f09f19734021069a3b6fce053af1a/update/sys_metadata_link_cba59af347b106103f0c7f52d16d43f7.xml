@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>dc8e2bab976dc21069a3b6fce053af5b</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_62500_mealplan_shopping_list">
+    <x_62500_mealplan_shopping_list action="INSERT_OR_UPDATE">
+        <bulk_buy>false</bulk_buy>
+        <ingredient display_value="Rice">f55e1327972dc21069a3b6fce053af7f</ingredient>
+        <meal_plan display_value="25 - 31 March">808c566f97a5c21069a3b6fce053afc8</meal_plan>
+        <preferred_store/>
+        <skip>false</skip>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-20 08:22:38</sys_created_on>
+        <sys_id>dc8e2bab976dc21069a3b6fce053af5b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-20 08:22:39</sys_updated_on>
+        <used_in_recipes>bcac87979795021069a3b6fce053afa2,425917d797d5021069a3b6fce053afdd,465917d797d5021069a3b6fce053afd5,38ac87979795021069a3b6fce053af76,c25917d797d5021069a3b6fce053afe0,465917d797d5021069a3b6fce053afd7</used_in_recipes>
+    </x_62500_mealplan_shopping_list>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-03 06:48:43</sys_created_on>
+        <sys_id>cba59af347b106103f0c7f52d16d43f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2024-04-20 18:22:38</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_metadata_link_cba59af347b106103f0c7f52d16d43f7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 06:48:43</sys_updated_on>
+        <tablename>x_62500_mealplan_shopping_list</tablename>
+    </sys_metadata_link>
+</record_update>

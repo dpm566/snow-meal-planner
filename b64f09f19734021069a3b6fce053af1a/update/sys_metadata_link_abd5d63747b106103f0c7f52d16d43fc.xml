@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>4e5917d797d5021069a3b6fce053afd6</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_62500_mealplan_recipe">
+    <x_62500_mealplan_recipe action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cook_time>1970-01-01 00:25:00</cook_time>
+        <cooking_instructions>1. In a bowl, mix yogurt, ginger garlic paste, lemon juice, garam masala, turmeric powder, red chili powder, cumin powder, coriander powder, salt, and pepper. 2. Add cubed paneer, bell pepper, onion, and tomato to the marinade. Mix well. 3. Cover and marinate for at least 1 hour in the refrigerator. 4. Preheat oven to 400Â°F (200Â°C). 5. Thread marinated paneer and vegetables onto skewers. 6. Brush with olive oil. 7. Bake in the preheated oven for 15-20, until paneer is golden brown and vegetables are tender. 8. Serve hot with mint chutney.</cooking_instructions>
+        <cuisine display_value="Indian">8f495a179791021069a3b6fce053afcf</cuisine>
+        <diet>bca1c6979711021069a3b6fce053af90</diet>
+        <effort display_value="Moderate">bee0a76e9730021069a3b6fce053af3e</effort>
+        <image/>
+        <ingredients/>
+        <meal_type display_value="Appetizer">91508fd39755021069a3b6fce053af8b</meal_type>
+        <name>Paneer Tikka</name>
+        <nutrition>Calories: 200, Protein: 15g, Fat: 15g, Carbs: 10g</nutrition>
+        <owned_by display_value="MP Admin">cbb877e697b0021069a3b6fce053af41</owned_by>
+        <pre_cook>false</pre_cook>
+        <prep_instructions>1. Cube paneer, bell pepper, onion, and tomato. 2. Prepare marinade.</prep_instructions>
+        <prep_required>false</prep_required>
+        <prep_time>1970-01-01 01:00:00</prep_time>
+        <serving>2</serving>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 01:56:01</sys_created_on>
+        <sys_id>4e5917d797d5021069a3b6fce053afd6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-01 06:39:10</sys_updated_on>
+        <time_of_day/>
+    </x_62500_mealplan_recipe>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-03 06:49:34</sys_created_on>
+        <sys_id>abd5d63747b106103f0c7f52d16d43fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Paneer Tikka</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_metadata_link_abd5d63747b106103f0c7f52d16d43fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 06:49:34</sys_updated_on>
+        <tablename>x_62500_mealplan_recipe</tablename>
+    </sys_metadata_link>
+</record_update>

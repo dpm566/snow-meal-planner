@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>0d8eabab976dc21069a3b6fce053af07</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_62500_mealplan_shopping_list">
+    <x_62500_mealplan_shopping_list action="INSERT_OR_UPDATE">
+        <bulk_buy>false</bulk_buy>
+        <ingredient display_value="Galangal">274e1fe3972dc21069a3b6fce053af62</ingredient>
+        <meal_plan display_value="11 - 17 March">187c12eb97a5c21069a3b6fce053afe1</meal_plan>
+        <preferred_store/>
+        <skip>false</skip>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-20 08:22:41</sys_created_on>
+        <sys_id>0d8eabab976dc21069a3b6fce053af07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-20 08:22:41</sys_updated_on>
+        <used_in_recipes>ca5917d797d5021069a3b6fce053afdb</used_in_recipes>
+    </x_62500_mealplan_shopping_list>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-03 06:47:56</sys_created_on>
+        <sys_id>6f75dab347b106103f0c7f52d16d43b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2024-04-20 18:22:41</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_metadata_link_6f75dab347b106103f0c7f52d16d43b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 06:47:56</sys_updated_on>
+        <tablename>x_62500_mealplan_shopping_list</tablename>
+    </sys_metadata_link>
+</record_update>

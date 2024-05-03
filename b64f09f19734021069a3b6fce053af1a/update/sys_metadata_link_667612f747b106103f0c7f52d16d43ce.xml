@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>242a2b27976dc21069a3b6fce053af23</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_62500_mealplan_m2m_recipe_ingredient">
+    <x_62500_mealplan_m2m_recipe_ingredient action="INSERT_OR_UPDATE">
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-20 08:03:33</sys_created_on>
+        <sys_id>242a2b27976dc21069a3b6fce053af23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-20 08:03:33</sys_updated_on>
+        <x_62500_mealplan_ingredient display_value="Coriander">4d5e9fe3972dc21069a3b6fce053afe9</x_62500_mealplan_ingredient>
+        <x_62500_mealplan_recipe display_value="Aloo Gobi">4a5917d797d5021069a3b6fce053afd5</x_62500_mealplan_recipe>
+    </x_62500_mealplan_m2m_recipe_ingredient>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-03 06:52:13</sys_created_on>
+        <sys_id>667612f747b106103f0c7f52d16d43ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2024-04-20 18:03:33</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_metadata_link_667612f747b106103f0c7f52d16d43ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 06:52:13</sys_updated_on>
+        <tablename>x_62500_mealplan_m2m_recipe_ingredient</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ec8e2bab976dc21069a3b6fce053afe5</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_62500_mealplan_shopping_list">
+    <x_62500_mealplan_shopping_list action="INSERT_OR_UPDATE">
+        <bulk_buy>false</bulk_buy>
+        <ingredient display_value="Coconut milk">274e1fe3972dc21069a3b6fce053af71</ingredient>
+        <meal_plan display_value="18 - 24 March">1a7c9a6f97a5c21069a3b6fce053af22</meal_plan>
+        <preferred_store/>
+        <skip>false</skip>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-20 08:22:39</sys_created_on>
+        <sys_id>ec8e2bab976dc21069a3b6fce053afe5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-20 08:22:40</sys_updated_on>
+        <used_in_recipes>c65917d797d5021069a3b6fce053afdb,ca5917d797d5021069a3b6fce053afdd,c65917d797d5021069a3b6fce053afdc,ca5917d797d5021069a3b6fce053afdc</used_in_recipes>
+    </x_62500_mealplan_shopping_list>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-03 06:49:09</sys_created_on>
+        <sys_id>edc5923747b106103f0c7f52d16d43b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2024-04-20 18:22:39</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_metadata_link_edc5923747b106103f0c7f52d16d43b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 06:49:09</sys_updated_on>
+        <tablename>x_62500_mealplan_shopping_list</tablename>
+    </sys_metadata_link>
+</record_update>
