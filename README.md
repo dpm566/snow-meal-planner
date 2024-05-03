@@ -19,4 +19,4 @@ This repo
 	6. Business Rule/Client Scripts
 
 **Doesn't Contain**
-Users/group data: as they couldn't be moved to the application
+Users/group and group type data: as they couldn't be moved to the application
