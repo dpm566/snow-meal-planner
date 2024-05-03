@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>Generate Dummy Data for Meal Planner</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[var mealPlanGR = new GlideRecord("x_62500_mealplan_meal_plan");
+mealPlanGR.query();
+while (mealPlanGR.next()) {
+   // allocateRecipes(mealPlanGR.getValue("sys_id"));
+}
+
+function allocateRecipes(mealPlan) {
+    var dayGR = new GlideRecord("x_62500_mealplan_day");
+    dayGR.query();
+    while (dayGR.next()) {
+        var num1 = Math.floor(Math.random() * 117) + 1;
+
+        var recipeGR = new GlideRecord("x_62500_mealplan_recipe");
+        recipeGR.chooseWindow(num1, num1 + 3); // Choose 3 random recipes
+        recipeGR.query();
+        gs.info(recipeGR.getRowCount());
+        while (recipeGR.next()) {
+            var recipeAllocationGR = new GlideRecord("x_62500_mealplan_recipe_allocation");
+            recipeAllocationGR.initialize();
+            recipeAllocationGR.meal_plan = mealPlan;
+            recipeAllocationGR.recipe = recipeGR.getValue("sys_id");
+            recipeAllocationGR.day = dayGR.getValue("sys_id");
+            recipeAllocationGR.insert();
+        }
+
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-20 02:15:50</sys_created_on>
+        <sys_id>037a52eb97a5c21069a3b6fce053af39</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Generate Dummy Data for Meal Planner</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_script_fix_037a52eb97a5c21069a3b6fce053af39</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-20 02:52:15</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

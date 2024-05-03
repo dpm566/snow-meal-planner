@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Recipe Allocation" language="en" table="x_62500_mealplan_recipe_allocation">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Recipe Allocation</label>
+            <language>en</language>
+            <name>x_62500_mealplan_recipe_allocation</name>
+            <plural>Recipe Allocations</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-10 21:41:27</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Recipe Allocation</sys_name>
+            <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+            <sys_update_name>sys_documentation_x_62500_mealplan_recipe_allocation__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-10 21:41:27</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

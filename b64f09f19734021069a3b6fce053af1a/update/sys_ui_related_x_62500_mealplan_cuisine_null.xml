@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_62500_mealplan_cuisine" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Cuisine - Default view" name="x_62500_mealplan_cuisine" related_list="NULL" sys_domain="global" view="Default view">c4cfdf67972dc21069a3b6fce053afe9</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_62500_mealplan_ingredient.used_in_cuisine</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-20 07:18:11</sys_created_on>
+            <sys_id>cccfdf67972dc21069a3b6fce053afea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-20 07:18:11</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Cuisine - Default view" name="x_62500_mealplan_cuisine" related_list="NULL" sys_domain="global" view="Default view">c4cfdf67972dc21069a3b6fce053afe9</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_62500_mealplan_recipe.cuisine</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-20 07:18:11</sys_created_on>
+            <sys_id>c4cfdf67972dc21069a3b6fce053afeb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-20 07:18:11</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Cuisine - Default view</calculated_name>
+            <filter/>
+            <name>x_62500_mealplan_cuisine</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-20 07:18:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c4cfdf67972dc21069a3b6fce053afe9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Cuisine - Default view</sys_name>
+            <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+            <sys_update_name>sys_ui_related_x_62500_mealplan_cuisine_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-20 07:18:11</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

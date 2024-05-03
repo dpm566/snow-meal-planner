@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function() {
+    /* widget controller */
+    var c = this;
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>Structures a single recipe data and calls the content layout</description>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>mp-recipe-content</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Meal Planner - Recipe Content</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    var recipeSysId = options.content;
+    var contentLinkedToRecorSysID = options.contentLinkedToRecorSysID;
+    var recipeTable = options.content_table;
+    var viewType = options.listType || 'card';
+    var title = options.widgetTitle;
+    var widgetSysId = options.widgetSysId;
+    var showRecipesAction = options.showRecipesAction;
+    var showAddAction = options.showAddAction;
+    var showRemoveAction = options.showRemoveAction;
+    var recipeCardDisplayWidgetTemplate = options.recipeCardDisplayWidgetTemplate;
+
+    data.recipeCardData = {};
+    data.recipeCardData.iconClass = "fa fa-pencil-square-o";
+    data.recipeCardData.type = gs.getMessage("Recipe");
+    data.recipeCardData.viewType = viewType;
+    data.recipeCardData.widgetTitle = title;
+    data.recipeCardData.widgetSysId = widgetSysId;
+
+    data.recipeCardData.showRecipesAction = showRecipesAction;
+    data.recipeCardData.showAddAction = showAddAction;
+    data.recipeCardData.showRemoveAction = showRemoveAction;
+    data.recipeCardData.recipeCardDisplayWidgetTemplate = recipeCardDisplayWidgetTemplate;
+    data.recipeCardData.sysId = recipeSysId;
+    data.recipeCardData.contentLinkedToRecorSysID = contentLinkedToRecorSysID;
+    data.recipeCardData.table = "x_62500_mealplan_recipe";
+
+    if (!recipeSysId || !recipeTable)
+        return;
+
+    var gr = new GlideRecordSecure(recipeTable);
+    if (gr.get(recipeSysId)) {
+        data.recipeCardData.title = gr.getDisplayValue('name');
+        //var description = gr.getDisplayValue('cooking_instructions');
+        //  data.recipeCardData.description = !description ? '' : $sp.stripHTML(description);
+        //  data.recipeCardData.description = "";
+        data.recipeCardData.image = gr.getDisplayValue('image') ? gr.getDisplayValue('image') + '?t=small' : 'x_62500_mealplan.recipe_placeholder_' + getRandomNumber() + '.jpg';
+        data.recipeCardData.url = '?id=mp_recipe&sys_id=' + gr.getValue('sys_id')+"&table="+recipeTable;
+
+        data.recipeCardData.additionalInfo = [{
+                'key': "Effort",
+                'value': gr.getDisplayValue("effort")
+            },
+            {
+                'key': "Prep",
+                'value': getTime(gr.getDisplayValue("prep_time"))
+            },
+            {
+                'key': "Cook",
+                'value': getTime(gr.getDisplayValue("cook_time"))
+            }
+        ];
+        data.widgetData = $sp.getWidget(recipeCardDisplayWidgetTemplate, data.recipeCardData);
+    } else
+        return;
+
+
+    function getTime(time) {
+        if (!time) return "";
+        time = time.toUpperCase().replace("MINUTES", "M");
+        time = time.toUpperCase().replace("HOURS", "H");
+        return time.replace(" ", "");
+
+    }
+
+    function getRandomNumber() {
+        return Math.floor(Math.random() * 7) + 1;
+    }
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-17 01:32:42</sys_created_on>
+        <sys_id>379a83649741021069a3b6fce053af4d</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>Meal Planner - Recipe Content</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sp_widget_379a83649741021069a3b6fce053af4d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-19 07:38:36</sys_updated_on>
+        <template><![CDATA[<div class="flex-display">
+  <sp-widget widget="c.data.widgetData"></sp-widget>
+</div>]]></template>
+    </sp_widget>
+</record_update>

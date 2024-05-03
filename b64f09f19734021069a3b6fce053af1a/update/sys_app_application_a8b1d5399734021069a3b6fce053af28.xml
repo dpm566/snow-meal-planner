@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description>App to help users plan and organize their meals efficiently</description>
+        <device_type>browser</device_type>
+        <hint>App to help users plan and organize their meals efficiently</hint>
+        <name/>
+        <order>200</order>
+        <roles>x_62500_mealplan.admin,x_62500_mealplan.reader,x_62500_mealplan.writer</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-08 03:41:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a8b1d5399734021069a3b6fce053af28</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Meal Planner</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_app_application_a8b1d5399734021069a3b6fce053af28</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 01:06:33</sys_updated_on>
+        <title>Meal Planner</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>Generate Shopping List for Meal Plan</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[var grX_62500MMP = new GlideRecord('x_62500_mealplan_meal_plan');
+//grX_62500MMP.addEncodedQuery("");
+grX_62500MMP.orderByDesc('sys_created_on');
+//grX_62500MMP.setLimit(100);
+grX_62500MMP.query();
+while (grX_62500MMP.next()) {
+    var grX_62500MRA = new GlideRecord('x_62500_mealplan_recipe_allocation');
+    grX_62500MRA.addQuery("meal_plan", grX_62500MMP.getValue("sys_id"));
+    //grX_62500MRA.setLimit(100);
+    grX_62500MRA.query();
+    while (grX_62500MRA.next()) {
+        generateShoppingList(grX_62500MMP.getValue("sys_id"), grX_62500MRA.getValue('recipe'))
+    }
+}
+
+function generateShoppingList(mealPlan, recipe) {
+    var grX_62500MM2RI = new GlideRecord('x_62500_mealplan_m2m_recipe_ingredient');
+    grX_62500MM2RI.addQuery("x_62500_mealplan_recipe", recipe);
+    //grX_62500MM2RI.setLimit(100);
+    grX_62500MM2RI.query();
+    while (grX_62500MM2RI.next()) {
+        var ingredient = grX_62500MM2RI.getValue('x_62500_mealplan_ingredient');
+        var grX_62500MSL = new GlideRecord('x_62500_mealplan_shopping_list');
+        grX_62500MSL.addQuery("meal_plan", mealPlan);
+        grX_62500MSL.addQuery("ingredient", ingredient);
+        grX_62500MSL.query();
+        if (grX_62500MSL.next()) { // update
+            grX_62500MSL.used_in_recipes = grX_62500MSL.used_in_recipes + ',' + recipe;
+            grX_62500MSL.update();
+        } else { // insert
+            var grX_62500MSL = new GlideRecord('x_62500_mealplan_shopping_list');
+            grX_62500MSL.initialize();
+            grX_62500MSL.ingredient = ingredient;
+            grX_62500MSL.meal_plan = mealPlan;
+            grX_62500MSL.used_in_recipes = recipe;
+            grX_62500MSL.insert();
+        }
+    }
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-20 08:06:22</sys_created_on>
+        <sys_id>8ecaa367976dc21069a3b6fce053afae</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Generate Shopping List for Meal Plan</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_script_fix_8ecaa367976dc21069a3b6fce053afae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-20 08:22:19</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="Meal Planner - Content Card V4">3612614397a9021069a3b6fce053af5e</child>
+        <cloned>2024-03-17 01:11:20</cloned>
+        <last_validated>2024-03-17 01:11:20</last_validated>
+        <parent display_value="Taxonomy Content Card">be4b0dd2779030109033bfeacf5a998a</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller = function($window, $location, snAnalytics, recentlyViewedFavorites) {
+    var c = this;
+    var relevantForYouWidgetSysId = '6cc836d0dbf700500c209493db961914';
+
+    c.isValidLocalDate = function(dateString) {
+        var localDateTimeFormat = g_user_date_time_format;
+        return getDateFromFormat(dateString, localDateTimeFormat) !== 0;
+    };
+
+    c.redirect = function($event) {
+        $event.preventDefault();
+        recentlyViewedFavorites.updateLastViewedForFavorite(c.table, c.sysId);
+
+        if (c.url) {
+            if (c.target === "_self") {
+                $location.search(c.url.substring(1));
+            } else {
+                //As we are stopping propagation of event zoom and teams will not be able to open the items that are external, so use window.open override.
+                $window.open(c.url, c.target);
+            }
+            c.createAppseeEvent();
+        }
+    };
+
+    c.createAppseeEvent = function() {
+        if (c.widgetSysId &amp;&amp; c.widgetSysId == relevantForYouWidgetSysId) {
+            var itemTypeTitle = c.getItemTypeTitle(c.table);
+            var payload = {};
+            payload.name = c.widgetTitle;
+            payload.data = {};
+            payload.data[itemTypeTitle] = c.title;
+            snAnalytics.addEvent(payload);
+        }
+    };
+
+    c.getItemTypeTitle = function(tableName) {
+        if (tableName == 'kb_knowledge')
+            return '${Article Title}';
+        else if (tableName == 'sc_cat_item')
+            return '${Catalog Title}';
+    };
+
+    c.iconClass = "";
+    c.type = "";
+    c.isFeatured = false;
+    c.image = "";
+    c.title = "";
+    c.description = "";
+    c.url = "";
+    c.additionalInfo = "";
+    c.additionalInfoIsDate = false;
+    c.viewType = 'card';
+    c.table = '';
+    c.ariaLabel = '';
+
+    if (c.data &amp;&amp; c.data.content) {
+        var cardData = c.data.content;
+        c.sysId = cardData.sysId;
+        c.widgetTitle = cardData.widgetTitle;
+        c.iconClass = cardData.iconClass;
+        c.type = cardData.type;
+        c.isFeatured = cardData.isFeatured;
+        c.image = cardData.image;
+        c.title = (cardData.title ? cardData.title : ' ').replaceAll('highlight&gt;', 'mark&gt;');
+        c.tooltipTitle = (cardData.title ? cardData.title : ' ').replace(/&lt;\/highlight&gt;/g, '').replace(/&lt;highlight&gt;/g, ''),
+            c.description = (cardData.description ? cardData.description : '').replaceAll('highlight&gt;', 'mark&gt;');
+        c.url = cardData.url;
+        c.target = cardData.target ? cardData.target : "_self";
+        c.additionalInfo = cardData.additionalInfo;
+        c.additionalInfoIsDate = c.isValidLocalDate(c.additionalInfo);
+        c.viewType = cardData.viewType;
+        c.widgetSysId = cardData.widgetSysId;
+        c.table = cardData.table;
+        c.ariaLabel = c.title;
+        if (!c.additionalInfoIsDate)
+            c.ariaLabel = c.ariaLabel + ' ' + c.additionalInfo;
+        c.ariaLabel = c.ariaLabel + ' ' + c.type + ' ' + c.description;
+    }
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$sp-space--lg : 16px !default;&amp;#13;
+$sp-space--md : 12px !default;&amp;#13;
+$sp-space--sm : 8px !default;&amp;#13;
+$sp-space--xs : 4px !default;&amp;#13;
+&amp;#13;
+$font-size-base : 16px !default;&amp;#13;
+$font-size-xl : 24px !default;&amp;#13;
+$font-size-xs : 12px !default;&amp;#13;
+&amp;#13;
+$text-primary : #181A1F !default;&amp;#13;
+$text-secondary: #474D5A !default;&amp;#13;
+$text-tertiary: #656E81 !default;&amp;#13;
+$mobile-title-font-size : 16px;&amp;#13;
+$mobile-sub-text-font-size : 14px;&amp;#13;
+$mobile-badge-font-size: 13px;&amp;#13;
+&amp;#13;
+.content-card-container {&amp;#13;
+  height: 100%;&amp;#13;
+  display: block;&amp;#13;
+  border-radius: 0.4rem;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.mesp-favorite .fa {&amp;#13;
+  color: #1F8476;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.content-card {&amp;#13;
+  min-height: 134px;&amp;#13;
+  max-height: 185px;&amp;#13;
+  padding: $mobile-sub-text-font-size;&amp;#13;
+  .fa { &amp;#13;
+    border: none;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.content-card:focus {&amp;#13;
+  box-shadow: 0rem 0rem 0rem 0.15rem $input-border-focus;&amp;#13;
+  border-radius: 0.6rem;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.content-card-mobile {&amp;#13;
+  min-height: 134px;&amp;#13;
+  max-height: 185px;&amp;#13;
+  padding: $sp-space--lg 0;&amp;#13;
+&amp;#13;
+  .fa {&amp;#13;
+    border: none;&amp;#13;
+  }&amp;#13;
+  .card-badge {&amp;#13;
+    font-size: $mobile-badge-font-size;&amp;#13;
+    font-weight: 600;&amp;#13;
+  }&amp;#13;
+  .card-icon {&amp;#13;
+    color: $text-color;&amp;#13;
+  }&amp;#13;
+  .type-padding {&amp;#13;
+    color: $text-color;&amp;#13;
+  }&amp;#13;
+  .item-title{&amp;#13;
+    font-size: $mobile-title-font-size;&amp;#13;
+    color: $text-color;&amp;#13;
+  }&amp;#13;
+  .item-description {&amp;#13;
+    font-weight: 400;&amp;#13;
+    font-size: $mobile-sub-text-font-size;&amp;#13;
+    color: #637274;&amp;#13;
+  }&amp;#13;
+  .item-additional-info {&amp;#13;
+    font-weight: 600;&amp;#13;
+    font-size: $mobile-sub-text-font-size;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.auto-margin-left-mobile {&amp;#13;
+  .feature-badge {&amp;#13;
+    background : rgba(14, 120, 196, 0.2);&amp;#13;
+    color: $text-color;&amp;#13;
+    font-weight: 400;&amp;#13;
+    font-size: $mobile-badge-font-size;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.card-icon {&amp;#13;
+  font-size: $font-size-base;&amp;#13;
+  color: $text-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.simple-link-icon {&amp;#13;
+  float: left;&amp;#13;
+  font-size: $font-size--xl;&amp;#13;
+  color: $text-color;&amp;#13;
+  border: 0px;&amp;#13;
+  margin-right: 10px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.simple-link-title {&amp;#13;
+  color: $link-color;&amp;#13;
+  font-weight: semi-bold;&amp;#13;
+  overflow: hidden;&amp;#13;
+  text-overflow: ellipsis;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.simple-link-title:hover {&amp;#13;
+  color: $link-hover-color;&amp;#13;
+  cursor: pointer;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.card-badge {&amp;#13;
+  display: flex;&amp;#13;
+  justify-content: flex-start;&amp;#13;
+  align-items: center;&amp;#13;
+  font-size: $font-size-xs;&amp;#13;
+  color: $text-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.type-padding {&amp;#13;
+  padding-left: $sp-space--xs;&amp;#13;
+  color: $text-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.header-container {&amp;#13;
+  margin-bottom: $sp-space--sm;&amp;#13;
+  min-height: 32px;&amp;#13;
+  margin-top: -6px;&amp;#13;
+}&amp;#13;
+.simple-header-container {&amp;#13;
+  display: flex;&amp;#13;
+  align-items: center;&amp;#13;
+  margin: 0 $sp-space--xs $sp-space--lg $sp-space--xs;&amp;#13;
+  height: 44px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.auto-margin-left {&amp;#13;
+  margin-left: auto;&amp;#13;
+  display: flex;&amp;#13;
+  align-items: center;&amp;#13;
+  column-gap: $sp-space--xs;&amp;#13;
+  position: absolute;&amp;#13;
+  top: 8px;&amp;#13;
+  right: 6px;&amp;#13;
+  min-height: 32px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.feature-badge {&amp;#13;
+  display: flex;&amp;#13;
+  justify-content: center;&amp;#13;
+  align-items: center;&amp;#13;
+  padding: 0 10px;&amp;#13;
+  border-radius: $border-radius-small;&amp;#13;
+  background: $state-info-bg;&amp;#13;
+  color: $text-primary;&amp;#13;
+  font-size: $font-size-xs;&amp;#13;
+  width: 55px;&amp;#13;
+  height: 20px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.card-image-container {&amp;#13;
+  display: flex;&amp;#13;
+  justify-content: flex-start;&amp;#13;
+  align-items: center;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.item-image {&amp;#13;
+  min-width: 70px;&amp;#13;
+  height: 70px;&amp;#13;
+  border-radius: 5px;&amp;#13;
+  align-self: flex-start;&amp;#13;
+  margin-right: 1rem;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.card-text-container {&amp;#13;
+  display: flex;&amp;#13;
+  flex-flow: column nowrap;&amp;#13;
+  align-items: flex-start;&amp;#13;
+  justify-content: space-evenly;&amp;#13;
+  word-break: break-word;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.item-title {&amp;#13;
+  min-height: 20px;&amp;#13;
+  color: $text-primary;&amp;#13;
+  font-size: $font-size-base;&amp;#13;
+  font-weight: 600;&amp;#13;
+  margin-bottom: $sp-space--sm;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.item-description {&amp;#13;
+  min-height: 20px;&amp;#13;
+  color: $text-tertiary;&amp;#13;
+  font-size: $font-size-xs;&amp;#13;
+  font-weight: normal;&amp;#13;
+  margin-bottom: $sp-space--sm;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.item-additional-info {&amp;#13;
+  color: $text-secondary;&amp;#13;
+  font-size: $font-size-xs;&amp;#13;
+  font-weight: 600;&amp;#13;
+  line-height: normal;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.text-ellipsis {&amp;#13;
+  overflow: hidden;&amp;#13;
+  text-overflow: ellipsis;&amp;#13;
+  display: -webkit-box;&amp;#13;
+  -webkit-box-orient: vertical;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.text-ellipsis-one-line {&amp;#13;
+  -webkit-line-clamp: 1;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.simple-link-badge{&amp;#13;
+  display:flex;&amp;#13;
+  align-items:center;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.simple-link-container {&amp;#13;
+  overflow: hidden;&amp;#13;
+  border: none;&amp;#13;
+  box-shadow: 0px 1px 0px #D4D4D4;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.text-ellipsis-two-line {&amp;#13;
+  -webkit-line-clamp: 2;&amp;#13;
+}&amp;#13;
+&amp;#13;
+/* IE specific Class to override */&amp;#13;
+@media screen and (-ms-high-contrast: active),&amp;#13;
+  (-ms-high-contrast: none) {&amp;#13;
+    .text-ellipsis{&amp;#13;
+      white-space: nowrap;&amp;#13;
+    }&amp;#13;
+    .image .card-text-container .text-ellipsis{&amp;#13;
+      width: 234px;&amp;#13;
+    }&amp;#13;
+    .card-text-container .text-ellipsis{&amp;#13;
+      width: 320px;&amp;#13;
+    }&amp;#13;
+}&amp;#13;
+&amp;#13;
+a:focus {&amp;#13;
+   outline:0;&amp;#13;
+   outline-offset: -.125rem;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.aria-labelled-by-hidden {&amp;#13;
+  display: none;&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;content-card&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Taxonomy Content Card&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    data.content = options;
+    data.isMobileApp = $sp.getParameter('view') === 'mobile';
+    data.favoriteWidget = $sp.getWidget('ec_favorite', {
+        'table': data.content.table,
+        'sys_id': data.content.sysId,
+		'common_page' : true
+    });
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-25 15:02:54&lt;/sys_created_on&gt;&lt;sys_id&gt;be4b0dd2779030109033bfeacf5a998a&lt;/sys_id&gt;&lt;sys_mod_count&gt;278&lt;/sys_mod_count&gt;&lt;sys_name&gt;Taxonomy Content Card&lt;/sys_name&gt;&lt;sys_package display_value="Employee Center" source="sn_ex_sp"&gt;4249e63a28d54d61bb6fbf61fd86cccb&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Employee Center"&gt;4249e63a28d54d61bb6fbf61fd86cccb&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_be4b0dd2779030109033bfeacf5a998a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-09-25 11:58:47&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;a ng-href="{{::c.url}}" tabindex="-1" ng-if="c.viewType == 'simple_link'" ng-attr-target="{{::c.target}}"&gt;
+  &lt;div class="simple-link-container"&gt;
+    &lt;div class="flexbox simple-header-container"&gt;
+      &lt;div class="simple-link-badge"&gt; 
+        &lt;div class="{{c.iconClass}} simple-link-icon" aria-hidden="true"&gt;&lt;/div&gt;
+        &lt;div aria-label="{{::c.title}}, {{::c.type}}" role="link" ng-click="c.redirect($event)" tabindex="0" ec-multiline-ellipsis-tooltip ec-ellipsis-tooltip-title="{{::c.title}}" class="type-padding simple-link-title text-ellipsis text-ellipsis-two-line"&gt;{{::c.title}}&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;
+&lt;span id="aria_label_{{::c.sysId}}" class="aria-labelled-by-hidden"&gt;{{::c.ariaLabel}}&lt;/span&gt;
+&lt;a class="content-card-container" ng-class="data.isMobileApp? 'content-card-mobile': 'content-card'" ng-if="c.viewType === 'card'" ng-click="c.redirect($event)" ng-href="{{::c.url}}"  aria-labelledby="count_{{::c.sysId}} aria_label_{{::c.sysId}}" ondragstart="return false;" ondrop="return false;" ng-attr-target="{{::c.target}}"&gt;
+  &lt;div class="flexbox header-container"&gt;
+    &lt;div class="card-badge"&gt; 
+      &lt;i class="{{c.iconClass}} card-icon" aria-hidden="true"&gt;&lt;/i&gt;
+      &lt;span class="type-padding"&gt;{{::c.type}}&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;div class="card-image-container"  ng-class="{image: c.image}"&gt;
+      &lt;img ng-if="c.image" class="item-image" aria-hidden="true" ng-src="{{c.image}}" /&gt;
+      &lt;div class="card-text-container"&gt;
+        &lt;div ec-multiline-ellipsis-tooltip ec-ellipsis-tooltip-title="{{::c.tooltipTitle}}"
+          class="item-title text-ellipsis text-ellipsis-two-line"&gt;
+          &lt;span ng-bind-html="c.title"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="item-description text-ellipsis text-ellipsis-two-line"&gt;
+          &lt;span ng-bind-html="c.description"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div ng-if="c.additionalInfoIsDate" class="item-additional-info text-ellipsis text-ellipsis-one-line"&gt;
+          &lt;sn-day-ago date="c.additionalInfo"&gt;&lt;/sn-day-ago&gt;
+        &lt;/div&gt;
+        &lt;div ng-if="!c.additionalInfoIsDate"&gt;
+          &lt;span ec-multiline-ellipsis-tooltip ec-ellipsis-tooltip-title="{{::c.additionalInfo}}" class="item-additional-info text-ellipsis text-ellipsis-one-line"&gt;{{::c.additionalInfo}}&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;
+&lt;div class="auto-margin-left" ng-class="{'auto-margin-left-mobile': data.isMobileApp}" ng-if="c.viewType === 'card'"&gt;
+  &lt;div ng-if="c.isFeatured" class="feature-badge"&gt;
+    &lt;span&gt;${Featured}&lt;/span&gt; 
+  &lt;/div&gt;
+  &lt;div ng-class="{'mesp-favorite': data.isMobileApp}" class="favorite-widget-container"&gt;
+    &lt;sp-widget widget="data.favoriteWidget"&gt;&lt;/sp-widget&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-18 08:52:16</sys_created_on>
+        <sys_id>7212ed8397a9021069a3b6fce053af7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3612614397a9021069a3b6fce053af5e</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_7212ed8397a9021069a3b6fce053af7a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-18 08:52:16</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

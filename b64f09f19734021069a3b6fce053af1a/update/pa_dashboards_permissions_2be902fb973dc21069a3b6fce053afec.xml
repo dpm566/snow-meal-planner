@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
+    <pa_dashboards_permissions action="INSERT_OR_UPDATE">
+        <dashboard display_value="Meal Planner - Admin">f027662f97e5c21069a3b6fce053af7f</dashboard>
+        <delete>false</delete>
+        <group/>
+        <identity>x_62500_mealplan.admin</identity>
+        <read>true</read>
+        <role display_value="x_62500_mealplan.admin" name="x_62500_mealplan.admin">5dbfcd359734021069a3b6fce053afc4</role>
+        <sys_class_name>pa_dashboards_permissions</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-03 05:57:23</sys_created_on>
+        <sys_id>2be902fb973dc21069a3b6fce053afec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_62500_mealplan.admin</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>pa_dashboards_permissions_2be902fb973dc21069a3b6fce053afec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 05:57:23</sys_updated_on>
+        <type>1</type>
+        <user/>
+        <write>true</write>
+    </pa_dashboards_permissions>
+</record_update>

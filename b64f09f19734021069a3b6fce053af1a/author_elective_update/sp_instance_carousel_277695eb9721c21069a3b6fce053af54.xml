@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_carousel">
+    <sp_instance_carousel action="DELETE">
+        <active>false</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <interval>5000</interval>
+        <order>3</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">87955deb9721c21069a3b6fce053afb6</sp_column>
+        <sp_widget display_value="Carousel">cf1a5153cb21020000f8d856634c9c3c</sp_widget>
+        <sys_class_name>sp_instance_carousel</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-19 21:18:29</sys_created_on>
+        <sys_id>277695eb9721c21069a3b6fce053af54</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Meal Planner Carousel</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sp_instance_carousel_277695eb9721c21069a3b6fce053af54</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-01 07:42:58</sys_updated_on>
+        <title>Meal Planner Carousel</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_carousel>
+    <sys_translated_text action="DELETE" query="documentkey=277695eb9721c21069a3b6fce053af54"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</application>
+        <file_path/>
+        <instance_id>eccd8fc5dbfe3dd038f1172913961987</instance_id>
+        <instance_name>dev226231</instance_name>
+        <name>sp_instance_carousel_277695eb9721c21069a3b6fce053af54</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_carousel"><sp_instance_carousel action="INSERT_OR_UPDATE"><active>false</active><class_name/><color>default</color><css/><glyph/><id/><interval>5000</interval><order>3</order><roles/><short_description/><size>md</size><sp_column display_value="1">87955deb9721c21069a3b6fce053afb6</sp_column><sp_widget display_value="Carousel">cf1a5153cb21020000f8d856634c9c3c</sp_widget><sys_class_name>sp_instance_carousel</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-04-19 21:18:29</sys_created_on><sys_id>277695eb9721c21069a3b6fce053af54</sys_id><sys_mod_count>10</sys_mod_count><sys_name>Meal Planner Carousel</sys_name><sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package><sys_policy/><sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope><sys_update_name>sp_instance_carousel_277695eb9721c21069a3b6fce053af54</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-01 07:42:58</sys_updated_on><title>Meal Planner Carousel</title><url/><widget_parameters/></sp_instance_carousel><sys_translated_text action="delete_multiple" query="documentkey=277695eb9721c21069a3b6fce053af54"/></record_update>]]></payload>
+        <payload_hash>215246706</payload_hash>
+        <record_name>Meal Planner Carousel</record_name>
+        <reverted_from/>
+        <source>4095d9f99734021069a3b6fce053af90</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-01 07:42:58</sys_created_on>
+        <sys_id>16ee881397b9021069a3b6fce053af57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f331b4cfb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-01 07:42:58</sys_updated_on>
+        <type>Instance of Carousel</type>
+        <update_guid>9aee8813c4b90210f48fea80ad4a0156</update_guid>
+        <update_guid_history>9aee8813c4b90210f48fea80ad4a0156:215246706,2aedcc9fb67902101fbb940469404d5f:1517160787,e37d849fcc79021026661c00a8098844:215246706,d16d84d7107902104729ded70e07db97:1517160787,9de7c057b17902104b89e312a9c3cfcb:-1572698086,fe374c57c27902105d43207576fdf800:1517160787,d6278457bb790210a03af0a73cbbfc9b:-1475892428,f54e0e6f8025c210bf34090a4364f087:-270784005,261ece6fbb25c210edba5bc3f5a5b7eb:-668397498,d28899ef2321c2108c56191d5d4677d4:-270784005,e77695eb9c21c210edaeb7aafeae2156:1410290422</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">7e01185397b9021069a3b6fce053afd9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-01 07:52:17</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_carousel">sp_instance_carousel</sys_db_object>
+        <sys_id>33a7d9994cd94da0934d3a9fe05d2379</sys_id>
+        <sys_metadata>277695eb9721c21069a3b6fce053af54</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Meal Planner Carousel</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_scope_delete display_value="Meal Planner">03cb3aa796df476a803ea65a8c71e844</sys_scope_delete>
+        <sys_update_name>sp_instance_carousel_277695eb9721c21069a3b6fce053af54</sys_update_name>
+        <sys_update_version display_value="sp_instance_carousel_277695eb9721c21069a3b6fce053af54">16ee881397b9021069a3b6fce053af57</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-01 07:52:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

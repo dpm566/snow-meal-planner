@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
+    <m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE">
+        <sp_angular_provider display_value="ecMultilineEllipsisTooltip">4de01d4677d530109033bfeacf5a9992</sp_angular_provider>
+        <sp_widget display_value="Meal Planner - Content Card V4">3612614397a9021069a3b6fce053af5e</sp_widget>
+        <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-18 08:52:16</sys_created_on>
+        <sys_id>7612ed8397a9021069a3b6fce053af77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ecMultilineEllipsisTooltip.Copy of Meal Planner - Content Card V3</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_7612ed8397a9021069a3b6fce053af77</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-18 08:52:16</sys_updated_on>
+    </m2m_sp_ng_pro_sp_widget>
+</record_update>

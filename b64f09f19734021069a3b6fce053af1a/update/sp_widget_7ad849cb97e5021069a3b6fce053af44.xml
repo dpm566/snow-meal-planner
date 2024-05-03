@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function(cabrillo, $rootScope, $scope) {
+    /* widget controller */
+    var c = this;
+    c.mealPlanRecordID = "";
+    c.dayRecordID = "";
+    c.add = function($event) {
+        //prevent clicking the parent widget card
+        $event.preventDefault();
+        if ($event.stopPropagation) {
+            $event.stopPropagation();
+        }
+        c.server.get({
+            "action": "addRecipe",
+            "mealPlanRecordID": c.mealPlanRecordID,
+            "dayRecordID": c.dayRecordID,
+            "recipeRecordID": c.data.content.sysId,
+
+        }).then(function(resp) {
+            c.broadcastRecipeSelectionModified();
+        });
+    };
+
+    c.remove = function($event) {
+        //prevent clicking the parent widget card
+        $event.preventDefault();
+        if ($event.stopPropagation) {
+            $event.stopPropagation();
+        }
+        c.server.get({
+            "action": "removeRecipe",
+            "contentLinkedToRecorSysID": c.data.content.contentLinkedToRecorSysID,
+            "recipeRecordID": c.data.content.sysId,
+
+        }).then(function(resp) {
+            c.broadcastRecipeSelectionModified();
+        });
+    };
+
+    c.broadcastRecipeSelectionModified = function() {
+        $rootScope.$broadcast('refresh-recipes', {});
+    };
+
+
+    $scope.$on('selectedMealPlanRecord', function($event, mealPlanRecord) {
+        c.mealPlanRecordID = mealPlanRecord.recordId;
+    });
+
+    $scope.$on('selectedDayRecord', function($event, dayRecord) {
+        c.dayRecordID = dayRecord.recordId;
+    });
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>mp-recipe-actions</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Meal Planner - Recipe Actions</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+    var isInitialRenderCall = !input || !input.hasOwnProperty('action');
+    // runs when the widget is first loaded
+    if (isInitialRenderCall) {
+        data.content = options;
+        //if the widget is called from server side of the parent widget, widget options are passed into 'options' object
+        //if the widget is called from client side of the parent widget, widget options are passed into 'input' object
+        data.content = input || options;
+        // data.table = dataFromParentWidget.table;
+        // data.sys_id = dataFromParentWidget.sysId;
+        // data.showAddAction = dataFromParentWidget.showAddAction;
+        // data.showRemoveAction = dataFromParentWidget.showRemoveAction;
+    }
+
+
+    // runs on adding recipe to meal plan
+    if (!isInitialRenderCall && input.action == 'addRecipe') {
+        var recipeAllocationGR = new GlideRecord("x_62500_mealplan_recipe_allocation");
+        recipeAllocationGR.initialize();
+        recipeAllocationGR.meal_plan = input.mealPlanRecordID;
+        recipeAllocationGR.day = input.dayRecordID;
+        recipeAllocationGR.recipe = input.recipeRecordID;
+        recipeAllocationGR.insert();
+    }
+
+    // runs on remove recipe allocation
+    if (!isInitialRenderCall && input.action == 'removeRecipe') {
+        var recipeAllocationGR = new GlideRecord("x_62500_mealplan_recipe_allocation");
+        if (recipeAllocationGR.get(input.contentLinkedToRecorSysID)) {
+            recipeAllocationGR.deleteRecord();
+        }
+    }
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-18 07:02:18</sys_created_on>
+        <sys_id>7ad849cb97e5021069a3b6fce053af44</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Meal Planner - Recipe Actions</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sp_widget_7ad849cb97e5021069a3b6fce053af44</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-19 06:23:07</sys_updated_on>
+        <template><![CDATA[<div class="show-add-action" ng-if="c.data.content.showAddAction && c.mealPlanRecordID && c.dayRecordID">
+  <button ng-click="c.add($event)">
+<span class="glyphicon glyphicon-plus"></span>
+  </button>
+</div>
+
+<div class="show-remove-action" ng-if="c.data.content.showRemoveAction">
+  <button ng-click="c.remove($event)">
+ <span class="glyphicon glyphicon-minus"></span>
+  </button>
+</div>]]></template>
+    </sp_widget>
+</record_update>

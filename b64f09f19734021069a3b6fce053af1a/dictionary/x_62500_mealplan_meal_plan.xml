@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="987a9be29730021069a3b6fce053aff5" label="Meal Plan" max_length="40" name="x_62500_mealplan_meal_plan" type="collection">
+        <element attributes="edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" label="Days Included" max_length="4000" name="days_included" reference="x_62500_mealplan_day" type="glide_list"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Last Meal Plan (Legacy)" max_length="32" name="last_meal_plan" reference="x_62500_mealplan_meal_plan" type="reference"/>
+        <element display="true" label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Requestor" max_length="32" name="requestor" reference="sys_user" type="reference"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="last_meal_plan"/>
+        </index>
+        <index name="index2">
+            <element name="requestor"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_header_footer">
+    <sp_header_footer action="INSERT_OR_UPDATE">
+        <category>sample</category>
+        <client_script><![CDATA[function mpFooter() {
+  // widget controller
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.sample-footer {
+  background-color: black; 
+  color: white; 
+  padding: 5px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>mp-footer</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Meal Planner Footer</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+ data.time = new GlideDateTime().getDisplayValue();
+})();]]></script>
+        <servicenow>false</servicenow>
+        <static>false</static>
+        <sys_class_name>sp_header_footer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-20 00:47:34</sys_created_on>
+        <sys_id>da560a6b9725c21069a3b6fce053af65</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Meal Planner Footer</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sp_header_footer_da560a6b9725c21069a3b6fce053af65</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-20 00:55:05</sys_updated_on>
+        <template><![CDATA[ <!--<div class="sample-footer" role="contentinfo">	
+  ${Page generated at {{::c.data.time}}}
+ </div>-->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>About</h4>
+                <p>&copy; 2024 Your Meal Planner App</p>
+                <p>Plan your meals, stay healthy!</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Social</h4>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.facebook.com/yourmealplanner" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/yourmealplanner" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/yourmealplanner/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Shop & Resources</h4>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.amazon.com/" target="_blank">Shop on Amazon</a></li>
+                    <li><a href="https://www.walmart.com/" target="_blank">Shop at Walmart</a></li>
+                    <li><a href="https://www.allrecipes.com/" target="_blank">AllRecipes</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+]]></template>
+    </sp_header_footer>
+</record_update>

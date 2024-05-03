@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($window, $location, snAnalytics, recentlyViewedFavorites) {
+    var c = this;
+	
+    c.isValidLocalDate = function(dateString) {
+        var localDateTimeFormat = g_user_date_time_format;
+        return getDateFromFormat(dateString, localDateTimeFormat) !== 0;
+    };
+
+    c.redirect = function($event) {
+        $event.preventDefault();
+        recentlyViewedFavorites.updateLastViewedForFavorite(c.table, c.sysId);
+
+        if (c.url) {
+            if (c.target === "_self") {
+                $location.search(c.url.substring(1));
+            } else {
+                //As we are stopping propagation of event zoom and teams will not be able to open the items that are external, so use window.open override.
+                $window.open(c.url, c.target);
+            }
+            c.createAppseeEvent();
+        }
+    };
+
+
+
+    c.iconClass = "";
+    c.type = "";
+    c.isFeatured = false;
+    c.image = "";
+    c.title = "";
+    c.description = "";
+    c.url = "";
+    c.additionalInfo = "";
+    c.additionalInfoIsDate = false;
+    c.viewType = 'card';
+    c.table = '';
+    c.ariaLabel = '';
+
+    if (c.data && c.data.content) {
+        var cardData = c.data.content;
+        c.sysId = cardData.sysId;
+        c.widgetTitle = cardData.widgetTitle;
+        c.iconClass = cardData.iconClass;
+        c.type = cardData.type;
+        c.isFeatured = cardData.isFeatured;
+        c.image = cardData.image;
+        c.title = (cardData.title ? cardData.title : ' ').replaceAll('highlight>', 'mark>');
+        c.tooltipTitle = (cardData.title ? cardData.title : ' ').replace(/<\/highlight>/g, '').replace(/<highlight>/g, ''),
+            c.description = (cardData.description ? cardData.description : '').replaceAll('highlight>', 'mark>');
+        c.url = cardData.url;
+        c.target = cardData.target ? cardData.target : "_self";
+        c.additionalInfo = cardData.additionalInfo;
+        c.additionalInfoIsDate = c.isValidLocalDate(c.additionalInfo);
+        c.viewType = cardData.viewType;
+        c.widgetSysId = cardData.widgetSysId;
+        c.table = cardData.table;
+        c.ariaLabel = c.title;
+        if (!c.additionalInfoIsDate)
+            c.ariaLabel = c.ariaLabel + ' ' + c.additionalInfo;
+        c.ariaLabel = c.ariaLabel + ' ' + c.type + ' ' + c.description;
+    }
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>$sp-space--lg : 16px !default;&#13;
+$sp-space--md : 12px !default;&#13;
+$sp-space--sm : 8px !default;&#13;
+$sp-space--xs : 4px !default;&#13;
+&#13;
+$font-size-base : 16px !default;&#13;
+$font-size-xl : 24px !default;&#13;
+$font-size-xs : 12px !default;&#13;
+&#13;
+$text-primary : #181A1F !default;&#13;
+$text-secondary: #474D5A !default;&#13;
+$text-tertiary: #656E81 !default;&#13;
+$mobile-title-font-size : 16px;&#13;
+$mobile-sub-text-font-size : 14px;&#13;
+$mobile-badge-font-size: 13px;&#13;
+&#13;
+.content-card-container {&#13;
+  height: 100%;&#13;
+  display: block;&#13;
+  border-radius: 0.4rem;&#13;
+}&#13;
+&#13;
+.mesp-favorite .fa {&#13;
+  color: #1F8476;&#13;
+}&#13;
+&#13;
+.content-card {&#13;
+  min-height: 134px;&#13;
+  max-height: 185px;&#13;
+  padding: $mobile-sub-text-font-size;&#13;
+  .fa { &#13;
+    border: none;&#13;
+  }&#13;
+}&#13;
+&#13;
+.content-card:focus {&#13;
+  box-shadow: 0rem 0rem 0rem 0.15rem $input-border-focus;&#13;
+  border-radius: 0.6rem;&#13;
+}&#13;
+&#13;
+.content-card-mobile {&#13;
+  min-height: 134px;&#13;
+  max-height: 185px;&#13;
+  padding: $sp-space--lg 0;&#13;
+&#13;
+  .fa {&#13;
+    border: none;&#13;
+  }&#13;
+  .card-badge {&#13;
+    font-size: $mobile-badge-font-size;&#13;
+    font-weight: 600;&#13;
+  }&#13;
+  .card-icon {&#13;
+    color: $text-color;&#13;
+  }&#13;
+  .type-padding {&#13;
+    color: $text-color;&#13;
+  }&#13;
+  .item-title{&#13;
+    font-size: $mobile-title-font-size;&#13;
+    color: $text-color;&#13;
+  }&#13;
+  .item-description {&#13;
+    font-weight: 400;&#13;
+    font-size: $mobile-sub-text-font-size;&#13;
+    color: #637274;&#13;
+  }&#13;
+  .item-additional-info {&#13;
+    font-weight: 600;&#13;
+    font-size: $mobile-sub-text-font-size;&#13;
+  }&#13;
+}&#13;
+&#13;
+.auto-margin-left-mobile {&#13;
+  .feature-badge {&#13;
+    background : rgba(14, 120, 196, 0.2);&#13;
+    color: $text-color;&#13;
+    font-weight: 400;&#13;
+    font-size: $mobile-badge-font-size;&#13;
+  }&#13;
+}&#13;
+&#13;
+.card-icon {&#13;
+  font-size: $font-size-base;&#13;
+  color: $text-color;&#13;
+}&#13;
+&#13;
+.simple-link-icon {&#13;
+  float: left;&#13;
+  font-size: $font-size--xl;&#13;
+  color: $text-color;&#13;
+  border: 0px;&#13;
+  margin-right: 10px;&#13;
+}&#13;
+&#13;
+.simple-link-title {&#13;
+  color: $link-color;&#13;
+  font-weight: semi-bold;&#13;
+  overflow: hidden;&#13;
+  text-overflow: ellipsis;&#13;
+}&#13;
+&#13;
+.simple-link-title:hover {&#13;
+  color: $link-hover-color;&#13;
+  cursor: pointer;&#13;
+}&#13;
+&#13;
+.card-badge {&#13;
+  display: flex;&#13;
+  justify-content: flex-start;&#13;
+  align-items: center;&#13;
+  font-size: $font-size-xs;&#13;
+  color: $text-color;&#13;
+}&#13;
+&#13;
+.type-padding {&#13;
+  padding-left: $sp-space--xs;&#13;
+  color: $text-color;&#13;
+}&#13;
+&#13;
+.header-container {&#13;
+  margin-bottom: $sp-space--sm;&#13;
+  min-height: 32px;&#13;
+  margin-top: -6px;&#13;
+}&#13;
+.simple-header-container {&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  margin: 0 $sp-space--xs $sp-space--lg $sp-space--xs;&#13;
+  height: 44px;&#13;
+}&#13;
+&#13;
+.auto-margin-left {&#13;
+  margin-left: auto;&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  column-gap: $sp-space--xs;&#13;
+  position: absolute;&#13;
+  top: 8px;&#13;
+  right: 6px;&#13;
+  min-height: 32px;&#13;
+}&#13;
+&#13;
+.feature-badge {&#13;
+  display: flex;&#13;
+  justify-content: center;&#13;
+  align-items: center;&#13;
+  padding: 0 10px;&#13;
+  border-radius: $border-radius-small;&#13;
+  background: $state-info-bg;&#13;
+  color: $text-primary;&#13;
+  font-size: $font-size-xs;&#13;
+  width: 55px;&#13;
+  height: 20px;&#13;
+}&#13;
+&#13;
+.card-image-container {&#13;
+  display: flex;&#13;
+  justify-content: flex-start;&#13;
+  align-items: center;&#13;
+}&#13;
+&#13;
+.item-image {&#13;
+  min-width: 70px;&#13;
+  height: 70px;&#13;
+  border-radius: 5px;&#13;
+  align-self: flex-start;&#13;
+  margin-right: 1rem;&#13;
+}&#13;
+&#13;
+.card-text-container {&#13;
+  display: flex;&#13;
+  flex-flow: column nowrap;&#13;
+  align-items: flex-start;&#13;
+  justify-content: space-evenly;&#13;
+  word-break: break-word;&#13;
+}&#13;
+&#13;
+.item-title {&#13;
+  min-height: 20px;&#13;
+  color: $text-primary;&#13;
+  font-size: $font-size-base;&#13;
+  font-weight: 600;&#13;
+  margin-bottom: $sp-space--sm;&#13;
+}&#13;
+&#13;
+.item-description {&#13;
+  min-height: 20px;&#13;
+  color: $text-tertiary;&#13;
+  font-size: $font-size-xs;&#13;
+  font-weight: normal;&#13;
+  margin-bottom: $sp-space--sm;&#13;
+}&#13;
+&#13;
+.item-additional-info {&#13;
+  color: $text-secondary;&#13;
+  font-size: $font-size-xs;&#13;
+  font-weight: 600;&#13;
+  line-height: normal;&#13;
+}&#13;
+&#13;
+.text-ellipsis {&#13;
+  overflow: hidden;&#13;
+  text-overflow: ellipsis;&#13;
+  display: -webkit-box;&#13;
+  -webkit-box-orient: vertical;&#13;
+}&#13;
+&#13;
+.text-ellipsis-one-line {&#13;
+  -webkit-line-clamp: 1;&#13;
+}&#13;
+&#13;
+.simple-link-badge{&#13;
+  display:flex;&#13;
+  align-items:center;&#13;
+}&#13;
+&#13;
+.simple-link-container {&#13;
+  overflow: hidden;&#13;
+  border: none;&#13;
+  box-shadow: 0px 1px 0px #D4D4D4;&#13;
+}&#13;
+&#13;
+.text-ellipsis-two-line {&#13;
+  -webkit-line-clamp: 2;&#13;
+}&#13;
+&#13;
+/* IE specific Class to override */&#13;
+@media screen and (-ms-high-contrast: active),&#13;
+  (-ms-high-contrast: none) {&#13;
+    .text-ellipsis{&#13;
+      white-space: nowrap;&#13;
+    }&#13;
+    .image .card-text-container .text-ellipsis{&#13;
+      width: 234px;&#13;
+    }&#13;
+    .card-text-container .text-ellipsis{&#13;
+      width: 320px;&#13;
+    }&#13;
+}&#13;
+&#13;
+a:focus {&#13;
+   outline:0;&#13;
+   outline-offset: -.125rem;&#13;
+}&#13;
+&#13;
+.aria-labelled-by-hidden {&#13;
+  display: none;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data>{"options":&#13;
+{&#13;
+        "sysId": "catalogSysId", &#13;
+        "widgetTitle": "widgetTitle",&#13;
+        "widgetSysId": "widgetSysId",&#13;
+        "title": "catItemDetails.name",&#13;
+        "description": "catItemDetailsshort_description",&#13;
+        "type": "Request",&#13;
+        "isFeatured": "isFeatured",&#13;
+        "image": "image",&#13;
+        "iconClass": "fa fa-pencil-square-o",&#13;
+        "target": "target",&#13;
+        "additionalInfo": "additionalInfo",&#13;
+        "url": "pageUrl",&#13;
+        "viewType": "simple_link", &#13;
+        "table": "catalogTable",&#13;
+"extra":"extrainfo"&#13;
+    }&#13;
+}&#13;
+</demo_data>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>mp-content-card</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Meal Planner - Content Card</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	
+	/* View Types are
+	- simple_link
+	- card
+	*/
+    data.content = options;
+    data.isMobileApp = $sp.getParameter('view') === 'mobile';
+    // data.favoriteWidget = $sp.getWidget('ec_favorite', {
+    //     'table': data.content.table,
+    //     'sys_id': data.content.sysId,
+	// 	'common_page' : true
+    // });
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-17 01:11:20</sys_created_on>
+        <sys_id>e6b543ec9701021069a3b6fce053af5c</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>Meal Planner - Content Card</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sp_widget_e6b543ec9701021069a3b6fce053af5c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-18 07:01:53</sys_updated_on>
+        <template><![CDATA[<a ng-href="{{::c.url}}" tabindex="-1" ng-if="c.viewType == 'simple_link'" ng-attr-target="{{::c.target}}">
+  <div class="simple-link-container">
+    <div class="flexbox simple-header-container">
+      <div class="simple-link-badge"> 
+        <div class="{{c.iconClass}} simple-link-icon" aria-hidden="true"></div>
+        <div aria-label="{{::c.title}}, {{::c.type}}" role="link" ng-click="c.redirect($event)" tabindex="0" ec-multiline-ellipsis-tooltip ec-ellipsis-tooltip-title="{{::c.title}}" class="type-padding simple-link-title text-ellipsis text-ellipsis-two-line">{{::c.title}}</div>
+      </div>
+    </div>
+  </div>
+</a>
+<span id="aria_label_{{::c.sysId}}" class="aria-labelled-by-hidden">{{::c.ariaLabel}}</span>
+<a class="content-card-container" ng-class="data.isMobileApp? 'content-card-mobile': 'content-card'" ng-if="c.viewType === 'card'" ng-click="c.redirect($event)" ng-href="{{::c.url}}"  aria-labelledby="count_{{::c.sysId}} aria_label_{{::c.sysId}}" ondragstart="return false;" ondrop="return false;" ng-attr-target="{{::c.target}}">
+  <div class="flexbox header-container">
+    <div class="card-badge"> 
+      <i class="{{c.iconClass}} card-icon" aria-hidden="true"></i>
+      <span class="type-padding">{{::c.type}}</span>
+    </div>
+  </div>
+  <div>
+    <div class="card-image-container"  ng-class="{image: c.image}">
+      <img ng-if="c.image" class="item-image" aria-hidden="true" ng-src="{{c.image}}" />
+      <div class="card-text-container">
+        <div ec-multiline-ellipsis-tooltip ec-ellipsis-tooltip-title="{{::c.tooltipTitle}}"
+          class="item-title text-ellipsis text-ellipsis-two-line">
+          <span ng-bind-html="c.title"></span>
+        </div>
+        <div class="item-description text-ellipsis text-ellipsis-two-line">
+          <span ng-bind-html="c.description"></span>
+        </div>
+        <div ng-if="c.additionalInfoIsDate" class="item-additional-info text-ellipsis text-ellipsis-one-line">
+          <sn-day-ago date="c.additionalInfo"></sn-day-ago>
+        </div>
+        <div ng-if="!c.additionalInfoIsDate">
+          <span ec-multiline-ellipsis-tooltip ec-ellipsis-tooltip-title="{{::c.additionalInfo}}" class="item-additional-info text-ellipsis text-ellipsis-one-line">{{::c.additionalInfo}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+<div class="auto-margin-left" ng-class="{'auto-margin-left-mobile': data.isMobileApp}" ng-if="c.viewType === 'card'">
+  <div ng-if="c.isFeatured" class="feature-badge">
+    <span>${Featured}</span> 
+  </div>
+  <div ng-class="{'mesp-favorite': data.isMobileApp}" class="favorite-widget-container">
+    <sp-widget widget="data.favoriteWidget"></sp-widget>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

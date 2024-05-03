@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8a4c3db197f4021069a3b6fce053af8d" label="Recipe Effort" max_length="40" name="x_62500_mealplan_recipe_effort" type="collection">
+        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+    </element>
+</database>

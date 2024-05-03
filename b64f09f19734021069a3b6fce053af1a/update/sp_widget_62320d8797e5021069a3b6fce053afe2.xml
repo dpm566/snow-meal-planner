@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function(cabrillo, $rootScope, $scope) {
+    /* widget controller */
+    var c = this;
+
+    c.broadcastSelectedMealPanRecord = function() {
+        var mealPlanRecord = {
+            "recordId": c.selectedMealPlan.value,
+            "recordDisplayValue": c.selectedMealPlan.displayValue
+        };
+        $rootScope.$broadcast('selectedMealPlanRecord', mealPlanRecord);
+		c.refreshSelectedRecipes();
+    };
+
+    c.broadcastSelectedDayRecord = function() {
+        var dayRecord = {
+            "recordId": c.selectedDay.value,
+            "recordDisplayValue": c.selectedDay.displayValue
+        };
+        $rootScope.$broadcast('selectedDayRecord', dayRecord);
+		c.refreshSelectedRecipes();
+    };
+    $scope.$on('refresh-recipes', function($event) {
+        c.refreshSelectedRecipes();
+    });
+
+    c.refreshSelectedRecipes = function() {
+        c.server.get({
+            "action": "refreshRecipes",
+            "mealPlanRecordID": c.selectedMealPlan.value,
+			"dayRecordID": c.selectedDay.value
+        }).then(function(resp) {
+            c.data.widgetsData = resp.data.widgetsData;
+        });
+    };
+
+
+
+    c.updateSelectedMealPlan = function() {
+        c.broadcastSelectedMealPanRecord();
+    };
+
+    c.updateSelectedDay = function() {
+        c.broadcastSelectedDayRecord();
+    };
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.flex-container {&#13;
+  display: flex;&#13;
+  flex-direction: column;&#13;
+}&#13;
+&#13;
+.selected-recipe-item{&#13;
+  width: 100px;&#13;
+  margin: 10px;&#13;
+  text-align: center;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>mp-selection</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Select Meal plan and Recipes</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+    var isInitialRenderCall = !input || !input.hasOwnProperty('action');
+    // runs when the widget is first loaded
+    if (isInitialRenderCall) {
+        var dataFromParentWidget = input || options;
+
+    }
+
+    if (input && input.action == 'refreshRecipes') {
+        refreshRecipes(input.mealPlanRecordID, input.dayRecordID);
+    }
+
+    function refreshRecipes(mealPlanRecordID, dayRecordID) {
+        console.log("refreshRecipes: " + mealPlanRecordID + " : " + dayRecordID);
+        var maxDisplayCount = 10;
+        data.instanceId = $sp.getDisplayValue("sys_id");
+        data.title = gs.getMessage(options.title);
+        data.contentTable = "x_62500_mealplan_recipe";
+        data.cardType = (options.list_type === 'Card List') ? options.card_behaviour + '' : '';
+        data.listType = 'card-list';
+        data.showEmptyState = options.show_empty_state;
+        data.showRecipesAction = true;
+        data.showAddAction = false;
+        data.showRemoveAction = true;
+
+        data.recipeCardDisplayWidgetTemplate = "mp-content-card-v4";
+        data.dataItems = getRecipesForMealPlan(mealPlanRecordID, dayRecordID);
+        data.widgetsData = getWidgetsData(data.dataItems, data.listType);
+
+    }
+
+    function getWidgetsData(dataResults, listType) {
+        listType = (listType === 'card-list') ? 'card' : 'simple_link';
+        var dataPayload = [];
+        if (data.dataItems && data.dataItems.length > 0) {
+            dataResults.forEach(function(item) {
+                var itemPayload = {};
+                var widgetName = "mp-recipe-content";
+                itemPayload.widgetSysId = "379a83649741021069a3b6fce053af4d";
+                itemPayload.widgetTitle = data.title;
+                itemPayload.content = item.sys_id;
+                itemPayload.contentLinkedToRecorSysID = item.linked_to_record_sys_id;
+                itemPayload.content_table = data.contentTable;
+                itemPayload.listType = listType;
+                itemPayload.showRecipesAction = data.showRecipesAction;
+                itemPayload.showAddAction = data.showAddAction;
+                itemPayload.showRemoveAction = data.showRemoveAction;
+                itemPayload.recipeCardDisplayWidgetTemplate = data.recipeCardDisplayWidgetTemplate;
+                itemPayload.widgetData = $sp.getWidget(widgetName, itemPayload);
+                dataPayload.push(itemPayload.widgetData);
+            });
+        }
+        return dataPayload;
+    }
+
+    /*_________________________________________________________________
+ 	* Description: Return the recipes list for the last meal plan
+ 	* Parameters: 
+	mealPlan: {string} sys_id of the meal plan record
+ 	* Returns: 
+	{array} list of recipe sys_ids
+	__________________________________________________________________*/
+    function getRecipesForMealPlan(mealPlanRecordID, dayRecordID) {
+        if (!mealPlanRecordID) return "";
+        var recipes = [];
+        var includedRecipesGR = new GlideRecord("x_62500_mealplan_recipe_allocation");
+        includedRecipesGR.addQuery("meal_plan", mealPlanRecordID);
+        if (dayRecordID) includedRecipesGR.addQuery("day", dayRecordID);
+        includedRecipesGR.addNotNullQuery("recipe");
+        includedRecipesGR.orderByDesc("sys_updated_on");
+        //   includedRecipesGR.setLimit(1);
+        includedRecipesGR.query();
+        while (includedRecipesGR.next()) {
+            recipes.push({
+                "sys_id": includedRecipesGR.getValue("recipe"),
+                "linked_to_record_sys_id": includedRecipesGR.getValue("sys_id")
+            });
+        }
+        return recipes;
+    }
+
+
+
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-18 06:33:44</sys_created_on>
+        <sys_id>62320d8797e5021069a3b6fce053afe2</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Select Meal plan and Recipes</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sp_widget_62320d8797e5021069a3b6fce053afe2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-19 06:18:34</sys_updated_on>
+        <template><![CDATA[<div>
+  <sn-record-picker field="c.selectedMealPlan" table="'x_62500_mealplan_meal_plan'" default-query="'start_dateRELATIVEGT@dayofweek@ago@15^start_dateRELATIVELT@dayofweek@ahead@15'"
+                            display-field="'name'"
+                            value-field="'sys_id'"
+                            display-fields="'start_date,end_date,last_meal_plan'"
+                            search-fields="'name'" page-size="100" on-change="c.updateSelectedMealPlan()"  ></sn-record-picker>
+  
+   <sn-record-picker field="c.selectedDay" table="'x_62500_mealplan_day'" default-query="''"
+                            display-field="'name'"
+                            value-field="'sys_id'"
+                            display-fields="'name'"
+                            search-fields="'name'" page-size="100" on-change="c.updateSelectedDay()"  ></sn-record-picker>
+  
+
+<div class="flex-container">
+
+  <div id="body-content" class="{{c.options.card_behaviour}} {{c.data.listType}} {{c.data.instanceId}}-body-content" ng-repeat="widgetData in c.data.widgetsData" ng-class="c.data.listType === 'simple-link' ? '': 'card-body-content'">
+        <div class="flex-item-card" id="{{c.data.listType}}-widget-body" ng-class="{'card-border' : c.data.listType === 'card-list'}">
+          <sp-widget widget="widgetData"></sp-widget>
+        </div>
+      </div>
+  
+  
+</div>
+
+</div>]]></template>
+    </sp_widget>
+</record_update>

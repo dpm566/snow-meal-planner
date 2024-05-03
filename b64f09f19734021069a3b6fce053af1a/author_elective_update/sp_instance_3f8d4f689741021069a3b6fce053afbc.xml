@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column/>
+        <sp_widget display_value="Meal Planner Content Card">e6b543ec9701021069a3b6fce053af5c</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-17 01:45:45</sys_created_on>
+        <sys_id>3f8d4f689741021069a3b6fce053afbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sp_instance_3f8d4f689741021069a3b6fce053afbc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-17 01:45:45</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=3f8d4f689741021069a3b6fce053afbc"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</application>
+        <file_path/>
+        <instance_id>eccd8fc5dbfe3dd038f1172913961987</instance_id>
+        <instance_name>dev226231</instance_name>
+        <name>sp_instance_3f8d4f689741021069a3b6fce053afbc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column/><sp_widget display_value="Meal Planner Content Card">e6b543ec9701021069a3b6fce053af5c</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-17 01:45:45</sys_created_on><sys_id>3f8d4f689741021069a3b6fce053afbc</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package><sys_policy/><sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope><sys_update_name>sp_instance_3f8d4f689741021069a3b6fce053afbc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-17 01:45:45</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=3f8d4f689741021069a3b6fce053afbc"/></record_update>]]></payload>
+        <payload_hash>540354069</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>4095d9f99734021069a3b6fce053af90</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-17 01:45:45</sys_created_on>
+        <sys_id>839dcf689741021069a3b6fce053af10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e4a16180a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-17 01:45:45</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>879dcf68724102102f7c2b45047a6a0f</update_guid>
+        <update_guid_history>879dcf68724102102f7c2b45047a6a0f:540354069</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">06cdc3689741021069a3b6fce053afe8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-17 01:46:31</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>55e2111c95624f6f91c76e359db0cb69</sys_id>
+        <sys_metadata>3f8d4f689741021069a3b6fce053afbc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_scope_delete display_value="Meal Planner">03cb3aa796df476a803ea65a8c71e844</sys_scope_delete>
+        <sys_update_name>sp_instance_3f8d4f689741021069a3b6fce053afbc</sys_update_name>
+        <sys_update_version display_value="sp_instance_3f8d4f689741021069a3b6fce053afbc">839dcf689741021069a3b6fce053af10</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-17 01:46:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

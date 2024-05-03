@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
+        <dashboard display_value="Meal Planner - Admin">f027662f97e5c21069a3b6fce053af7f</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>1</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-20 03:11:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8c37e62f97e5c21069a3b6fce053af0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>f027662f97e5c21069a3b6fce053af7f</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_8c37e62f97e5c21069a3b6fce053af0a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-20 03:11:03</sys_updated_on>
+        <tab display_value="Meal Planner Trends">c037a62f97e5c21069a3b6fce053afe9</tab>
+    </pa_m2m_dashboard_tabs>
+</record_update>

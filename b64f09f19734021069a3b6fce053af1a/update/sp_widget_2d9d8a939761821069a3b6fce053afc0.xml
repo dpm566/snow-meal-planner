@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.recipe-container {&#13;
+            margin: 0 auto;&#13;
+            padding: 20px;&#13;
+            border: 1px solid #ccc;&#13;
+            border-radius: 8px;&#13;
+            background-color: #f9f9f9;&#13;
+        }&#13;
+        .recipe-header {&#13;
+            text-align: center;&#13;
+            margin-bottom: 20px;&#13;
+        }&#13;
+        .recipe-image {&#13;
+            max-width: 100%;&#13;
+            height: auto;&#13;
+            display: block;&#13;
+            margin: 0 auto;&#13;
+            margin-bottom: 20px;&#13;
+            border-radius: 8px;&#13;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);&#13;
+        }&#13;
+        .recipe-details {&#13;
+            font-size: 16px;&#13;
+            margin-bottom: 20px;&#13;
+        }&#13;
+        .recipe-section {&#13;
+            margin-bottom: 20px;&#13;
+        }&#13;
+        .recipe-section-title {&#13;
+            font-size: 24px;&#13;
+            margin-bottom: 10px;&#13;
+        }&#13;
+        .recipe-list {&#13;
+            list-style-type: none;&#13;
+            padding-left: 0;&#13;
+        }</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>mp-display-recipe</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Meal Planner - Display Recipe</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function($sp) {
+    if (input) {
+        data.table = input.table;
+        data.sys_id = input.sys_id;
+        data.view = input.view;
+    } else {
+        data.table = options.table || $sp.getParameter("t") || $sp.getParameter("table");
+        data.sys_id = options.sys_id || $sp.getParameter("sys_id");
+
+        data.view = options.view || $sp.getParameter("view") || $sp.getParameter("v"); // no default
+    }
+    var recordGR = $sp.getRecord();
+    if (recordGR == null)
+        return;
+
+    data.canRead = recordGR.canRead();
+    if (!data.canRead)
+        return;
+
+    var fields = $sp.getFieldsObject(recordGR, 'name,ingredients,prep_instructions,time_of_day,active,effort,pre_cook,prep_required,cooking_instructions,image,owned_by,nutrition,prep_time,cook_time,meal_type,cuisine,diet,serving');
+    
+    data.fields = fields;
+	data.recipeImage =  (data.fields.image.displayValue) ? data.fields.image.displayValue + '?t=small' : 'x_62500_mealplan.recipe_placeholder_' + getRandomNumber() + '.jpg';
+
+	function getRandomNumber() {
+        return Math.floor(Math.random() * 7) + 1;
+    }
+})($sp);]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-19 06:41:43</sys_created_on>
+        <sys_id>2d9d8a939761821069a3b6fce053afc0</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Meal Planner - Display Recipe</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sp_widget_2d9d8a939761821069a3b6fce053afc0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-19 07:36:57</sys_updated_on>
+        <template><![CDATA[<div class="recipe-container">
+    <div class="recipe-header">
+        <h1 class="recipe-name">{{data.fields.name.display_value}}</h1>
+        <img class="recipe-image" ng-src="{{data.recipeImage}}" alt="Recipe Image">
+    </div>
+
+    <div class="recipe-details">
+        <p><strong>Effort:</strong> {{data.fields.effort.display_value}}</p>
+        <p><strong>Prep Time:</strong> {{data.fields.prep_time.display_value}}</p>
+        <p><strong>Cook Time:</strong> {{data.fields.cook_time.display_value}}</p>
+        <p><strong>Meal Type:</strong> {{data.fields.meal_type.display_value}}</p>
+        <p><strong>Cuisine:</strong> {{data.fields.cuisine.display_value}}</p>
+        <p><strong>Diet:</strong> {{data.fields.diet.display_value}}</p>
+        <p><strong>Serving:</strong> {{data.fields.serving.display_value}}</p>
+    </div>
+
+       <div class="recipe-section">
+        <h2 class="recipe-section-title">Preparation Instructions:</h2>
+          <p>{{data.fields.prep_instructions.display_value}}</p>
+    </div>
+   <div class="recipe-section">
+        <h2 class="recipe-section-title">Cooking Instructions:</h2>
+          <p>{{data.fields.cooking_instructions.display_value}}</p>
+    </div>
+   <div class="recipe-section">
+        <h2 class="recipe-section-title">Nutrition:</h2>
+          <p>{{data.fields.nutrition.display_value}}</p>
+    </div>
+  
+   <div class="recipe-section">
+        <h2 class="recipe-section-title">Ingredients:</h2>
+       <p>{{data.fields.ingredients.display_value}}</p>
+    </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="fb1df93597f4021069a3b6fce053af4b" label="Recipe" max_length="40" name="x_62500_mealplan_recipe" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Cooking Instructions" max_length="4000" name="cooking_instructions" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Cook Time" max_length="40" name="cook_time" type="glide_duration"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Cuisine" max_length="32" name="cuisine" reference="x_62500_mealplan_cuisine" type="reference"/>
+        <element attributes="can_group=true,edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" label="Diet" max_length="1024" name="diet" reference="x_62500_mealplan_diet" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Effort" max_length="32" name="effort" reference="x_62500_mealplan_recipe_effort" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,pdf_cell_type=image" label="Image" max_length="255" name="image" type="user_image"/>
+        <element label="Ingredients" max_length="4000" name="ingredients" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Meal Type" max_length="32" name="meal_type" reference="x_62500_mealplan_meal_type" type="reference"/>
+        <element display="true" label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Nutrition" max_length="1000" name="nutrition" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Owned By" max_length="32" name="owned_by" reference="sys_user" type="reference"/>
+        <element label="Prep Instructions" max_length="4000" name="prep_instructions" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Is Prep Required ?" max_length="40" name="prep_required" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Prep Time" max_length="40" name="prep_time" type="glide_duration"/>
+        <element attributes="edge_encryption_enabled=true" label="Can Pre Cook ?" max_length="40" name="pre_cook" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Serving" max_length="40" name="serving" type="string">
+            <choice>
+                <element inactive_on_update="false" label="1" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="5" value="6"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" label="Time of Day (Legacy)" max_length="4000" name="time_of_day" reference="x_62500_mealplan_time_of_day" type="glide_list"/>
+        <index name="index">
+            <element name="cuisine"/>
+        </index>
+        <index name="index2">
+            <element name="effort"/>
+        </index>
+        <index name="index3">
+            <element name="meal_type"/>
+        </index>
+        <index name="index4">
+            <element name="owned_by"/>
+        </index>
+    </element>
+</database>

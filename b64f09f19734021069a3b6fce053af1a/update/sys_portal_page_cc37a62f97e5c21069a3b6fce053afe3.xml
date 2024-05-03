@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2024-05-03 06:41:44">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order/>
+        <read_roles>snc_internal</read_roles>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-20 03:11:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cc37a62f97e5c21069a3b6fce053afe3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Meal Planner Trends</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_portal_page_cc37a62f97e5c21069a3b6fce053afe3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-20 05:34:41</sys_updated_on>
+        <title>Meal Planner Trends</title>
+        <user/>
+        <view>new_tab_1</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="Meal Planner Trends">cc37a62f97e5c21069a3b6fce053afe3</page>
+                <summary>Popular Recipes</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2024-04-20 03:15:09</sys_created_on>
+                <sys_id>0828aa6f97e5c21069a3b6fce053afce</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2024-04-20 03:15:09</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2024-04-20 13:15:09">0828aa6f97e5c21069a3b6fce053afce</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:15:09</sys_created_on>
+                        <sys_id>0828aa6f97e5c21069a3b6fce053afcf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:15:09</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2024-04-20 13:15:09">0828aa6f97e5c21069a3b6fce053afce</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:15:09</sys_created_on>
+                        <sys_id>4428aa6f97e5c21069a3b6fce053afcf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:15:09</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2024-04-20 13:15:09">0828aa6f97e5c21069a3b6fce053afce</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:15:09</sys_created_on>
+                        <sys_id>8028aa6f97e5c21069a3b6fce053afcf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:15:09</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2024-04-20 13:15:09">0828aa6f97e5c21069a3b6fce053afce</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:15:09</sys_created_on>
+                        <sys_id>8828aa6f97e5c21069a3b6fce053afce</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:15:09</sys_updated_on>
+                        <value>9ba7ee2f97e5c21069a3b6fce053afb4</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2024-04-20 13:15:09">0828aa6f97e5c21069a3b6fce053afce</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:15:09</sys_created_on>
+                        <sys_id>c828aa6f97e5c21069a3b6fce053afcf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:15:09</sys_updated_on>
+                        <value>Popular Recipes</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2024-04-20 13:15:09">0828aa6f97e5c21069a3b6fce053afce</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:15:09</sys_created_on>
+                        <sys_id>cc28aa6f97e5c21069a3b6fce053afce</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:15:09</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="Meal Planner Trends">cc37a62f97e5c21069a3b6fce053afe3</page>
+                <summary>Popular Cuisines</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2024-04-20 06:10:32</sys_created_on>
+                <sys_id>1540dbef97a9c21069a3b6fce053afb1</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2024-04-20 06:10:32</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2024-04-20 16:10:32">1540dbef97a9c21069a3b6fce053afb1</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:10:32</sys_created_on>
+                        <sys_id>1540dbef97a9c21069a3b6fce053afb2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:10:32</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2024-04-20 16:10:32">1540dbef97a9c21069a3b6fce053afb1</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:10:32</sys_created_on>
+                        <sys_id>5140dbef97a9c21069a3b6fce053afb2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:10:32</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2024-04-20 16:10:32">1540dbef97a9c21069a3b6fce053afb1</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:10:32</sys_created_on>
+                        <sys_id>9540dbef97a9c21069a3b6fce053afb1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:10:32</sys_updated_on>
+                        <value>ab2447ef9769c21069a3b6fce053af70</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2024-04-20 16:10:32">1540dbef97a9c21069a3b6fce053afb1</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:10:32</sys_created_on>
+                        <sys_id>9d40dbef97a9c21069a3b6fce053afb1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:10:32</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2024-04-20 16:10:32">1540dbef97a9c21069a3b6fce053afb1</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:10:32</sys_created_on>
+                        <sys_id>d540dbef97a9c21069a3b6fce053afb2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:10:32</sys_updated_on>
+                        <value>Popular Cuisines</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2024-04-20 16:10:32">1540dbef97a9c21069a3b6fce053afb1</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:10:32</sys_created_on>
+                        <sys_id>d940dbef97a9c21069a3b6fce053afb1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:10:32</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="Meal Planner Trends">cc37a62f97e5c21069a3b6fce053afe3</page>
+                <summary>Popular Meal Types</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2024-04-20 06:09:13</sys_created_on>
+                <sys_id>31ff4baf97a9c21069a3b6fce053afc4</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2024-04-20 06:09:13</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2024-04-20 16:09:13">31ff4baf97a9c21069a3b6fce053afc4</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:09:13</sys_created_on>
+                        <sys_id>31ff4baf97a9c21069a3b6fce053afc5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:09:13</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2024-04-20 16:09:13">31ff4baf97a9c21069a3b6fce053afc4</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:09:13</sys_created_on>
+                        <sys_id>7dff4baf97a9c21069a3b6fce053afc4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:09:13</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2024-04-20 16:09:13">31ff4baf97a9c21069a3b6fce053afc4</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:09:13</sys_created_on>
+                        <sys_id>b1ff4baf97a9c21069a3b6fce053afc4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:09:13</sys_updated_on>
+                        <value>6e954b6397a9c21069a3b6fce053afc9</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2024-04-20 16:09:13">31ff4baf97a9c21069a3b6fce053afc4</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:09:13</sys_created_on>
+                        <sys_id>b9ff4baf97a9c21069a3b6fce053afc4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:09:13</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2024-04-20 16:09:13">31ff4baf97a9c21069a3b6fce053afc4</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:09:13</sys_created_on>
+                        <sys_id>f1ff4baf97a9c21069a3b6fce053afc5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:09:13</sys_updated_on>
+                        <value>Popular Meal Types</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2024-04-20 16:09:13">31ff4baf97a9c21069a3b6fce053afc4</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:09:13</sys_created_on>
+                        <sys_id>f5ff4baf97a9c21069a3b6fce053afc4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:09:13</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="Meal Planner Trends">cc37a62f97e5c21069a3b6fce053afe3</page>
+                <summary>Number of days with most allocations</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2024-04-20 03:15:18</sys_created_on>
+                <sys_id>d228266f97e5c21069a3b6fce053af18</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2024-04-20 03:15:18</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2024-04-20 13:15:18">d228266f97e5c21069a3b6fce053af18</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:15:18</sys_created_on>
+                        <sys_id>1a282e6f97e5c21069a3b6fce053afcb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:15:18</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2024-04-20 13:15:18">d228266f97e5c21069a3b6fce053af18</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:15:18</sys_created_on>
+                        <sys_id>5628266f97e5c21069a3b6fce053af18</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:15:18</sys_updated_on>
+                        <value>0df7a26f97e5c21069a3b6fce053af5b</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2024-04-20 13:15:18">d228266f97e5c21069a3b6fce053af18</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:15:18</sys_created_on>
+                        <sys_id>56282e6f97e5c21069a3b6fce053afcb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:15:18</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2024-04-20 13:15:18">d228266f97e5c21069a3b6fce053af18</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:15:18</sys_created_on>
+                        <sys_id>92282e6f97e5c21069a3b6fce053afcb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:15:18</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2024-04-20 13:15:18">d228266f97e5c21069a3b6fce053af18</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:15:18</sys_created_on>
+                        <sys_id>9a28266f97e5c21069a3b6fce053af18</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:15:18</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2024-04-20 13:15:18">d228266f97e5c21069a3b6fce053af18</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:15:18</sys_created_on>
+                        <sys_id>da282e6f97e5c21069a3b6fce053afcb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:15:18</sys_updated_on>
+                        <value>Number of days with most allocations</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="Meal Planner Trends">cc37a62f97e5c21069a3b6fce053afe3</page>
+                <summary>Number of Meal Plans by customer</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2024-04-20 03:11:29</sys_created_on>
+                <sys_id>d647e62f97e5c21069a3b6fce053af69</sys_id>
+                <sys_mod_count>2</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2024-04-20 03:12:34</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2024-04-20 13:11:29">d647e62f97e5c21069a3b6fce053af69</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:11:29</sys_created_on>
+                        <sys_id>12476a2f97e5c21069a3b6fce053afc0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:11:29</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2024-04-20 13:11:29">d647e62f97e5c21069a3b6fce053af69</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:11:29</sys_created_on>
+                        <sys_id>5e476a2f97e5c21069a3b6fce053afbf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:11:29</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2024-04-20 13:11:29">d647e62f97e5c21069a3b6fce053af69</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:11:29</sys_created_on>
+                        <sys_id>9a476a2f97e5c21069a3b6fce053afbf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:11:29</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2024-04-20 13:11:29">d647e62f97e5c21069a3b6fce053af69</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:11:29</sys_created_on>
+                        <sys_id>9e47e62f97e5c21069a3b6fce053af69</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:12:34</sys_updated_on>
+                        <value>d2876e2f97e5c21069a3b6fce053af60</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2024-04-20 13:11:29">d647e62f97e5c21069a3b6fce053af69</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 03:11:29</sys_created_on>
+                        <sys_id>d2476a2f97e5c21069a3b6fce053afc0</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 03:12:34</sys_updated_on>
+                        <value>Number of Meal Plans by customer</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="Meal Planner Trends">cc37a62f97e5c21069a3b6fce053afe3</page>
+                <summary>Trending Recipes by Effort</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2024-04-20 06:08:39</sys_created_on>
+                <sys_id>eddf0baf97a9c21069a3b6fce053af41</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2024-04-20 06:08:39</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2024-04-20 16:08:39">eddf0baf97a9c21069a3b6fce053af41</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:08:39</sys_created_on>
+                        <sys_id>29df0baf97a9c21069a3b6fce053af43</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:08:39</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2024-04-20 16:08:39">eddf0baf97a9c21069a3b6fce053af41</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:08:39</sys_created_on>
+                        <sys_id>65df0baf97a9c21069a3b6fce053af42</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:08:39</sys_updated_on>
+                        <value>ace5cf6397a9c21069a3b6fce053af79</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2024-04-20 16:08:39">eddf0baf97a9c21069a3b6fce053af41</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:08:39</sys_created_on>
+                        <sys_id>65df0baf97a9c21069a3b6fce053af43</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:08:39</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2024-04-20 16:08:39">eddf0baf97a9c21069a3b6fce053af41</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:08:39</sys_created_on>
+                        <sys_id>a1df0baf97a9c21069a3b6fce053af43</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:08:39</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2024-04-20 16:08:39">eddf0baf97a9c21069a3b6fce053af41</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:08:39</sys_created_on>
+                        <sys_id>e9df0baf97a9c21069a3b6fce053af43</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:08:39</sys_updated_on>
+                        <value>Trending Recipes by Effort</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2024-04-20 16:08:39">eddf0baf97a9c21069a3b6fce053af41</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 06:08:39</sys_created_on>
+                        <sys_id>eddf0baf97a9c21069a3b6fce053af42</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 06:08:39</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="Meal Planner Trends">cc37a62f97e5c21069a3b6fce053afe3</page>
+                <summary>Popular Ingredients</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2024-04-20 08:27:06</sys_created_on>
+                <sys_id>f58febeb976dc21069a3b6fce053af53</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2024-04-20 08:27:06</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2024-04-20 18:27:06">f58febeb976dc21069a3b6fce053af53</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 08:27:06</sys_created_on>
+                        <sys_id>318febeb976dc21069a3b6fce053af55</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 08:27:06</sys_updated_on>
+                        <value>donut</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2024-04-20 18:27:06">f58febeb976dc21069a3b6fce053af53</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 08:27:06</sys_created_on>
+                        <sys_id>7d8febeb976dc21069a3b6fce053af53</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 08:27:06</sys_updated_on>
+                        <value>d11f63eb976dc21069a3b6fce053af52</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2024-04-20 18:27:06">f58febeb976dc21069a3b6fce053af53</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 08:27:06</sys_created_on>
+                        <sys_id>7d8febeb976dc21069a3b6fce053af54</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 08:27:06</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2024-04-20 18:27:06">f58febeb976dc21069a3b6fce053af53</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 08:27:06</sys_created_on>
+                        <sys_id>b98febeb976dc21069a3b6fce053af54</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 08:27:06</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2024-04-20 18:27:06">f58febeb976dc21069a3b6fce053af53</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 08:27:06</sys_created_on>
+                        <sys_id>f18febeb976dc21069a3b6fce053af55</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 08:27:06</sys_updated_on>
+                        <value>Popular Ingredients</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2024-04-20 18:27:06">f58febeb976dc21069a3b6fce053af53</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-04-20 08:27:06</sys_created_on>
+                        <sys_id>f58febeb976dc21069a3b6fce053af54</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-04-20 08:27:06</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

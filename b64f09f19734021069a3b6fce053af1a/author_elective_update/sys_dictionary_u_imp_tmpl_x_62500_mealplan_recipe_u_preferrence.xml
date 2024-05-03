@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="DELETE" element="u_preferrence" table="u_imp_tmpl_x_62500_mealplan_recipe">
+        <active>true</active>
+        <array>false</array>
+        <attributes>edge_encryption_enabled=true,import_attribute_name=Preferrence</attributes>
+        <audit>false</audit>
+        <calculation/>
+        <choice>0</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Preferrence</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>u_preferrence</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <name>u_imp_tmpl_x_62500_mealplan_recipe</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-10 22:04:38</sys_created_on>
+        <sys_id>6971e3ae9730021069a3b6fce053af77</sys_id>
+        <sys_name>Preferrence</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_dictionary_u_imp_tmpl_x_62500_mealplan_recipe_u_preferrence</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-10 22:04:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</application>
+        <file_path/>
+        <instance_id>eccd8fc5dbfe3dd038f1172913961987</instance_id>
+        <instance_name>dev226231</instance_name>
+        <name>sys_dictionary_u_imp_tmpl_x_62500_mealplan_recipe_u_preferrence</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="u_preferrence" table="u_imp_tmpl_x_62500_mealplan_recipe"><active>true</active><array>false</array><attributes>edge_encryption_enabled=true,import_attribute_name=Preferrence</attributes><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Preferrence</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_preferrence</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>u_imp_tmpl_x_62500_mealplan_recipe</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-10 22:04:38</sys_created_on><sys_id>6971e3ae9730021069a3b6fce053af77</sys_id><sys_name>Preferrence</sys_name><sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package><sys_policy/><sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope><sys_update_name>sys_dictionary_u_imp_tmpl_x_62500_mealplan_recipe_u_preferrence</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-10 22:04:38</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+        <payload_hash>-2021980931</payload_hash>
+        <record_name>Imp Tmpl X 62500 Mealplan Recipe.Preferrence</record_name>
+        <reverted_from/>
+        <source>4095d9f99734021069a3b6fce053af90</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-10 22:04:39</sys_created_on>
+        <sys_id>2d71e3ae9730021069a3b6fce053af9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e2a65819a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-10 22:04:39</sys_updated_on>
+        <type>Dictionary</type>
+        <update_guid>a171e3ae52300210b0d4d7eb000d629f</update_guid>
+        <update_guid_history>a171e3ae52300210b0d4d7eb000d629f:-2021980931</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-10 22:35:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
+        <sys_id>0294bb4b4f34465a854176ddbca3d944</sys_id>
+        <sys_metadata>6971e3ae9730021069a3b6fce053af77</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Preferrence</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_parent display_value="">ed71e3ae9730021069a3b6fce053af66</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_scope_delete display_value="Meal Planner">03cb3aa796df476a803ea65a8c71e844</sys_scope_delete>
+        <sys_update_name>sys_dictionary_u_imp_tmpl_x_62500_mealplan_recipe_u_preferrence</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_u_imp_tmpl_x_62500_mealplan_recipe_u_preferrence">2d71e3ae9730021069a3b6fce053af9f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-10 22:35:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5d1107979755021069a3b6fce053afdc" extends="sys_import_set_row" label="Imp Tmpl X 62500 Mealplan Recipe" max_length="40" name="u_imp_tmpl_x_62500_mealplan_recipe" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cooking Instructions" label="Cooking Instructions" max_length="4000" name="u_cooking_instructions" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cook Time" label="Cook Time" max_length="40" name="u_cook_time" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cuisine" label="Cuisine" max_length="32" name="u_cuisine" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Diet" label="Diet" max_length="1024" name="u_diet" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Effort" label="Effort" max_length="32" name="u_effort" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Image" label="Image" max_length="255" name="u_image" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Ingredients" label="Ingredients" max_length="40" name="u_ingredients" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Ingredient Information" label="Ingredient Information" max_length="327" name="u_ingredient_information" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Meal Type" label="Meal Type" max_length="32" name="u_meal_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="100" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Nutrition" label="Nutrition" max_length="1000" name="u_nutrition" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Prep Instructions" label="Prep Instructions" max_length="4000" name="u_prep_instructions" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Prep Time" label="Prep Time" max_length="40" name="u_prep_time" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Serving" label="Serving" max_length="40" name="u_serving" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Time of Day" label="Time of Day" max_length="40" name="u_time_of_day" type="string"/>
+    </element>
+</database>

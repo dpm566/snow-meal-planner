@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="DELETE">
+        <operation>execute</operation>
+        <source_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-10 21:48:17</sys_created_on>
+        <sys_id>c2bd5f2a9730021069a3b6fce053afbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Glide API: scripting</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_scope_privilege_c2bd5f2a9730021069a3b6fce053afbb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-10 21:48:17</sys_updated_on>
+        <target_name>Glide API: scripting</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</application>
+        <file_path/>
+        <instance_id>eccd8fc5dbfe3dd038f1172913961987</instance_id>
+        <instance_name>dev226231</instance_name>
+        <name>sys_scope_privilege_c2bd5f2a9730021069a3b6fce053afbb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-10 21:48:17</sys_created_on><sys_id>c2bd5f2a9730021069a3b6fce053afbb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Glide API: scripting</sys_name><sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package><sys_policy/><sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope><sys_update_name>sys_scope_privilege_c2bd5f2a9730021069a3b6fce053afbb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-10 21:48:17</sys_updated_on><target_name>Glide API: scripting</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+        <payload_hash>1507604449</payload_hash>
+        <record_name>Glide API: scripting</record_name>
+        <reverted_from/>
+        <source>4095d9f99734021069a3b6fce053af90</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-10 21:48:17</sys_created_on>
+        <sys_id>c6bd5f2a9730021069a3b6fce053afbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e2a5687500000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-10 21:48:17</sys_updated_on>
+        <type>Cross scope privilege</type>
+        <update_guid>0ebd5f2a53300210d32f0861ee2269bc</update_guid>
+        <update_guid_history>0ebd5f2a53300210d32f0861ee2269bc:1507604449</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-10 22:36:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_scope_privilege">sys_scope_privilege</sys_db_object>
+        <sys_id>bd5305fb872e4c67a5d502957481fb51</sys_id>
+        <sys_metadata>c2bd5f2a9730021069a3b6fce053afbb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Glide API: scripting</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_scope_delete display_value="Meal Planner">03cb3aa796df476a803ea65a8c71e844</sys_scope_delete>
+        <sys_update_name>sys_scope_privilege_c2bd5f2a9730021069a3b6fce053afbb</sys_update_name>
+        <sys_update_version display_value="sys_scope_privilege_c2bd5f2a9730021069a3b6fce053afbb">c6bd5f2a9730021069a3b6fce053afbd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-10 22:36:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

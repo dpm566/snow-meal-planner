@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_analytics_bucket">
+    <sys_analytics_bucket action="DELETE">
+        <analytics_channel display_value="web">6496ef61c7001010393d265c95c260b9</analytics_channel>
+        <application_name>Meal Planner</application_name>
+        <bucket_document_id>63439de79721c21069a3b6fce053afa8</bucket_document_id>
+        <bucket_metadata/>
+        <bucket_table_name>sp_portal</bucket_table_name>
+        <bucket_type>service_portal</bucket_type>
+        <enable_unauthenticated_user_tracking>false</enable_unauthenticated_user_tracking>
+        <enabled>true</enabled>
+        <internal_name_for_index>x_62500_mealplan.sp_portal.63439de79721c21069a3b6fce053afa8</internal_name_for_index>
+        <sys_class_name>sys_analytics_bucket</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-19 21:04:45</sys_created_on>
+        <sys_id>56531d2b9721c21069a3b6fce053afa5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Meal Planner</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_analytics_bucket_56531d2b9721c21069a3b6fce053afa5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-19 21:04:45</sys_updated_on>
+    </sys_analytics_bucket>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</application>
+        <file_path/>
+        <instance_id>97b41742dbb27d9002d9172913961944</instance_id>
+        <instance_name>dev230132</instance_name>
+        <name>sys_analytics_bucket_56531d2b9721c21069a3b6fce053afa5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_analytics_bucket">
+    <sys_analytics_bucket action="INSERT_OR_UPDATE">
+        <analytics_channel display_value="web">6496ef61c7001010393d265c95c260b9</analytics_channel>
+        <application_name>Meal Planner</application_name>
+        <bucket_document_id>63439de79721c21069a3b6fce053afa8</bucket_document_id>
+        <bucket_metadata/>
+        <bucket_table_name>sp_portal</bucket_table_name>
+        <bucket_type>service_portal</bucket_type>
+        <enable_unauthenticated_user_tracking>false</enable_unauthenticated_user_tracking>
+        <enabled>true</enabled>
+        <internal_name_for_index>x_62500_mealplan.sp_portal.63439de79721c21069a3b6fce053afa8</internal_name_for_index>
+        <sys_class_name>sys_analytics_bucket</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-19 21:04:45</sys_created_on>
+        <sys_id>56531d2b9721c21069a3b6fce053afa5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Meal Planner</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_analytics_bucket_56531d2b9721c21069a3b6fce053afa5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-19 21:04:45</sys_updated_on>
+    </sys_analytics_bucket>
+</record_update>]]></payload>
+        <payload_hash>767468008</payload_hash>
+        <record_name>Meal Planner</record_name>
+        <reverted_from/>
+        <source>9d5bf52f473982103f0c7f52d16d43d9</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-02 10:15:44</sys_created_on>
+        <sys_id>8a7b796f473982103f0c7f52d16d43de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f38cd87ae0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-02 10:15:44</sys_updated_on>
+        <type>User Experience Analytics Settings</type>
+        <update_guid>867b796fc5398210b63f8e24f101bfde</update_guid>
+        <update_guid_history>867b796fc5398210b63f8e24f101bfde:0,800b7debb939821059db09d2013dde93:308788985,f9b3f1afb7f582109bf64ee572ad545a:0,6163f92f6bf58210c10205aa41541d67:205132121,3e5f412b7e358210bba6266dfb137bb1:0,cb9e4d67ac3582104fdf86e813f08c91:1606353163,2bf10123adf182101af815c255241de5:767468008</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-02 23:29:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_analytics_bucket">sys_analytics_bucket</sys_db_object>
+        <sys_id>6398c3c6662343c78056ee2de92fab89</sys_id>
+        <sys_metadata>56531d2b9721c21069a3b6fce053afa5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Meal Planner</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_scope_delete display_value="Meal Planner">03cb3aa796df476a803ea65a8c71e844</sys_scope_delete>
+        <sys_update_name>sys_analytics_bucket_56531d2b9721c21069a3b6fce053afa5</sys_update_name>
+        <sys_update_version display_value="sys_analytics_bucket_56531d2b9721c21069a3b6fce053afa5">8a7b796f473982103f0c7f52d16d43de</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-02 23:29:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

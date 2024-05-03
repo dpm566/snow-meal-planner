@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d59e39b597f4021069a3b6fce053af93" label="x_62500_mealplan_m2m_Recipes_Ingredients" max_length="40" name="x_62500_mealplan_m2m_recipe_ingredient" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Ingredients" max_length="32" name="x_62500_mealplan_ingredient" reference="x_62500_mealplan_ingredient" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Recipes" max_length="32" name="x_62500_mealplan_recipe" reference="x_62500_mealplan_recipe" type="reference"/>
+        <index name="index">
+            <element name="x_62500_mealplan_ingredient"/>
+        </index>
+        <index name="index2">
+            <element name="x_62500_mealplan_recipe"/>
+        </index>
+    </element>
+</database>

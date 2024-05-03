@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>update</directory>
+        <documentkey>30ac87979795021069a3b6fce053af7e</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_62500_mealplan_recipe">
+    <x_62500_mealplan_recipe action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cook_time>1970-01-01 00:15:00</cook_time>
+        <cooking_instructions>1. Drain tuna and mix with mayonnaise, lemon juice, mustard, salt, and pepper. 2. Chop celery, onion, and pickles, then mix into tuna. 3. Toast bread, then assemble sandwiches with lettuce, tomato, and tuna salad.</cooking_instructions>
+        <cuisine display_value="Global">eb81cf979755021069a3b6fce053af07</cuisine>
+        <diet/>
+        <effort display_value="Easy">fae0a76e9730021069a3b6fce053af3e</effort>
+        <image/>
+        <ingredients>Canned Tuna (1 can), Mayonnaise (2 tbsp)</ingredients>
+        <meal_type display_value="Lunch">617596df9751021069a3b6fce053af66</meal_type>
+        <name>Tuna Salad Sandwich</name>
+        <nutrition>Calories: 250, Protein: 20g, Fat: 10g, Carbs: 20g</nutrition>
+        <owned_by/>
+        <pre_cook>false</pre_cook>
+        <prep_instructions>1. Drain tuna. 2. Chop vegetables and pickles.</prep_instructions>
+        <prep_required>false</prep_required>
+        <prep_time>1970-01-01 00:10:00</prep_time>
+        <serving>2</serving>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 01:00:29</sys_created_on>
+        <sys_id>30ac87979795021069a3b6fce053af7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 01:00:29</sys_updated_on>
+        <time_of_day/>
+    </x_62500_mealplan_recipe>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 01:24:57</sys_created_on>
+        <sys_id>4332d35f9795021069a3b6fce053af0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tuna Salad Sandwich</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_metadata_link_4332d35f9795021069a3b6fce053af0c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 01:24:57</sys_updated_on>
+        <tablename>x_62500_mealplan_recipe</tablename>
+    </sys_metadata_link>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</application>
+        <file_path/>
+        <instance_id>97b41742dbb27d9002d9172913961944</instance_id>
+        <instance_name>dev230132</instance_name>
+        <name>sys_metadata_link_4332d35f9795021069a3b6fce053af0c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_metadata_link"&gt;
+    &lt;sys_metadata_link action="INSERT_OR_UPDATE"&gt;
+        &lt;directory&gt;update&lt;/directory&gt;
+        &lt;documentkey&gt;30ac87979795021069a3b6fce053af7e&lt;/documentkey&gt;
+        &lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_62500_mealplan_recipe"&gt;
+    &lt;x_62500_mealplan_recipe action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;cook_time&gt;1970-01-01 00:15:00&lt;/cook_time&gt;
+        &lt;cooking_instructions&gt;1. Drain tuna and mix with mayonnaise, lemon juice, mustard, salt, and pepper. 2. Chop celery, onion, and pickles, then mix into tuna. 3. Toast bread, then assemble sandwiches with lettuce, tomato, and tuna salad.&lt;/cooking_instructions&gt;
+        &lt;cuisine display_value="Global"&gt;eb81cf979755021069a3b6fce053af07&lt;/cuisine&gt;
+        &lt;diet/&gt;
+        &lt;effort display_value="Easy"&gt;fae0a76e9730021069a3b6fce053af3e&lt;/effort&gt;
+        &lt;image/&gt;
+        &lt;ingredients&gt;Canned Tuna (1 can), Mayonnaise (2 tbsp)&lt;/ingredients&gt;
+        &lt;meal_type display_value="Lunch"&gt;617596df9751021069a3b6fce053af66&lt;/meal_type&gt;
+        &lt;name&gt;Tuna Salad Sandwich&lt;/name&gt;
+        &lt;nutrition&gt;Calories: 250, Protein: 20g, Fat: 10g, Carbs: 20g&lt;/nutrition&gt;
+        &lt;owned_by/&gt;
+        &lt;pre_cook&gt;false&lt;/pre_cook&gt;
+        &lt;prep_instructions&gt;1. Drain tuna. 2. Chop vegetables and pickles.&lt;/prep_instructions&gt;
+        &lt;prep_required&gt;false&lt;/prep_required&gt;
+        &lt;prep_time&gt;1970-01-01 00:10:00&lt;/prep_time&gt;
+        &lt;serving&gt;2&lt;/serving&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-04-07 01:00:29&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;30ac87979795021069a3b6fce053af7e&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-04-07 01:00:29&lt;/sys_updated_on&gt;
+        &lt;time_of_day/&gt;
+    &lt;/x_62500_mealplan_recipe&gt;
+&lt;/record_update&gt;
+]]&gt;&lt;/payload&gt;
+        &lt;sys_class_name&gt;sys_metadata_link&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-04-07 01:24:57&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;4332d35f9795021069a3b6fce053af0c&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;Tuna Salad Sandwich&lt;/sys_name&gt;
+        &lt;sys_package display_value="Meal Planner" source="x_62500_mealplan"&gt;b64f09f19734021069a3b6fce053af1a&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Meal Planner"&gt;b64f09f19734021069a3b6fce053af1a&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_metadata_link_4332d35f9795021069a3b6fce053af0c&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-04-07 01:24:57&lt;/sys_updated_on&gt;
+        &lt;tablename&gt;x_62500_mealplan_recipe&lt;/tablename&gt;
+    &lt;/sys_metadata_link&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>1591841226</payload_hash>
+        <record_name>Tuna Salad Sandwich</record_name>
+        <reverted_from/>
+        <source>47d18daf47b182103f0c7f52d16d43dd</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-02 06:04:40</sys_created_on>
+        <sys_id>9c02812347f182103f0c7f52d16d4375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f37e7ac1d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-02 06:04:40</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>5c028123edf1821056217f9c821c4b75</update_guid>
+        <update_guid_history>5c028123edf1821056217f9c821c4b75:1591841226</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-02 06:31:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>30d5db2a7f1848a485c06129fe012829</sys_id>
+        <sys_metadata>4332d35f9795021069a3b6fce053af0c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tuna Salad Sandwich</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_scope_delete display_value="Meal Planner">03cb3aa796df476a803ea65a8c71e844</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_4332d35f9795021069a3b6fce053af0c</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_4332d35f9795021069a3b6fce053af0c">9c02812347f182103f0c7f52d16d4375</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-02 06:31:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

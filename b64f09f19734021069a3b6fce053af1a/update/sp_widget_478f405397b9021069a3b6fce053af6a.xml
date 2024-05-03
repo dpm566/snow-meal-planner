@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function image() {
+    /* widget controller */
+    var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.icon-img{&#13;
+  display: block;&#13;
+  margin-left: auto;&#13;
+  margin-right: auto;&#13;
+  width: 70%;&#13;
+  border-radius: 5%;&#13;
+}&#13;
+.image-link-header{&#13;
+    margin: 5px 0;&#13;
+}&#13;
+&#13;
+.image-link-header,.image-link-description{&#13;
+   text-align: center; &#13;
+}&#13;
+&#13;
+h2 {&#13;
+  font-size: 18px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>Widget with image, title, description and link for information.</description>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>mp-image</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Image with Title and Description</name>
+        <option_schema>[{"name":"image","section":"Presentation","label":"Image","type":"string"},{"name":"title","section":"Presentation","label":"Title","type":"string"},{"name":"description","section":"Presentation","label":"Description","type":"string"},{"name":"link","section":"Presentation","label":"Link","type":"string"},{"name":"link_title","section":"Presentation","label":"Link Title","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-01 07:45:45</sys_created_on>
+        <sys_id>478f405397b9021069a3b6fce053af6a</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Image with Title and Description</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sp_widget_478f405397b9021069a3b6fce053af6a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-01 08:38:28</sys_updated_on>
+        <template><![CDATA[<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-20 imagelink">
+  <img src="{{c.options.image}}" class="icon-img" alt="{{c.options.title}}"/>
+  <div class="details-container">
+  <div class="black image-link-header">
+    <h1>{{c.options.title}}</h1>
+  </div>
+    <div class="image-link-description">
+  <h2>
+    ${{{c.options.description}}}
+  </h2>
+       </div>
+	<!--<a href="{{c.options.link}}" target="_blank" class="btn btn-xs btn-primary" aria-label="{{c.options.description}} which opens in a new window">
+      ${{{c.options.link_title}}}
+    </a>-->
+</div>
+  </div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e5e9536f97e9c21069a3b6fce053af36" extends="sys_import_set_row" label="Staging Ingredient" max_length="40" name="x_62500_mealplan_staging_ingredient" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="60" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Used in Cuisine" label="Used in Cuisine" max_length="40" name="u_used_in_cuisine" type="string"/>
+    </element>
+</database>

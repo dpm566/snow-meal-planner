@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="Meal Planner - Recipe Content">379a83649741021069a3b6fce053af4d</child>
+        <cloned>2024-03-17 01:32:42</cloned>
+        <last_validated>2024-03-17 01:32:42</last_validated>
+        <parent display_value="Catalog Content">ae5755942d94b010f87773c1799aba0f</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;catalog-content&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;Catalog Content&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+    var catalogSysId = options.content;
+    var catalogTable = options.content_table;
+    var widgetTitle = options.widgetTitle;
+    var widgetSysId = options.widgetSysId;
+    var isFeatured = options.isFeatured || false;
+    var viewType = options.listType || 'card';
+    var CONTENT_TYPES = {
+        KB: 'kb',
+        EXTERNAL: 'external'
+    };
+    var TYPES = {
+        ORDER_GUIDE: 'order_guide',
+        CONTENT_ITEM: 'content_item'
+    };
+    var searchModeEnabled = options.searchModeEnabled || false;
+    var CARD_DATA_SOURCE = {};
+    if (searchModeEnabled) {
+        CARD_DATA_SOURCE = options;
+        var type = "";
+        var content_type = "";
+        var kb_article = "";
+        for(var i=0; i&lt;options.columns.length; i++){
+            if(options.columns[i].fieldName === "sys_class_name"){
+                type = options.columns[i].value;
+            }
+            else if(options.columns[i].fieldName === "content_type"){
+                content_type = options.columns[i].value;
+            }
+            else if(options.columns[i].fieldName === "kb_article"){
+                kb_article = options.columns[i].value;
+            }
+        }
+        
+        if(type === 'sc_cat_item_guide'){
+            CARD_DATA_SOURCE.type = TYPES.ORDER_GUIDE;
+        }
+        else if(type === "sc_cat_item_content") {
+            CARD_DATA_SOURCE.type = TYPES.CONTENT_ITEM;
+        }
+        CARD_DATA_SOURCE.content_type = content_type;
+        CARD_DATA_SOURCE.kb_article = kb_article;
+    }
+    else {
+        if (!catalogSysId || !catalogTable)
+            return;
+        var catalogItemJS = new sn_sc.CatItem(catalogSysId);
+        CARD_DATA_SOURCE = catalogItemJS.getItemSummary();
+    }
+
+    var catItemDetails = CARD_DATA_SOURCE;
+    var additionalInfo = '';
+    var zeroRecurringPriceVal = '0.00';
+    //to check if the catalog item has price and also 'glide.sc.price.display' property value
+    if (catItemDetails.show_price &amp;&amp; $sp.showCatalogPrices()) {
+        additionalInfo = catItemDetails.price;
+        var isRecurringPriceNonZero = catItemDetails.recurring_price &amp;&amp; catItemDetails.recurring_price.substr(1, 4) !== zeroRecurringPriceVal;
+        if (catItemDetails.recurring_frequency &amp;&amp; catItemDetails.recurring_frequency !== null &amp;&amp; isRecurringPriceNonZero)
+            additionalInfo = additionalInfo + ' + ' + catItemDetails.recurring_price + '/' + catItemDetails.recurring_frequency;
+    }
+
+    var page = catalogTable;
+    //use kb article sys_id instead of catalog record sys_id if it is a kb article type catalog
+    var sys_id = catItemDetails.content_type === CONTENT_TYPES.KB ? catItemDetails.kb_article : catItemDetails.sys_id;
+    //for the external type catalog, open the catalog item in new tab
+    var target = catItemDetails.content_type === CONTENT_TYPES.EXTERNAL ? '_blank' : '';
+
+    //page ids differ for order guide and kb article type catalog items
+    if (catItemDetails.type === TYPES.ORDER_GUIDE) {
+        page = 'sc_cat_item_guide';
+    } else if (catItemDetails.type === TYPES.CONTENT_ITEM &amp;&amp; catItemDetails.content_type === CONTENT_TYPES.KB) {
+        page = 'kb_article';
+    }
+
+    var pageUrl = catItemDetails.type === TYPES.CONTENT_ITEM &amp;&amp; catItemDetails.content_type === CONTENT_TYPES.EXTERNAL ?
+        catItemDetails.url : '?id=' + page + '&amp;sys_id=' + sys_id;
+
+    var image = catItemDetails.picture ? catItemDetails.picture + '?t=small' : '';
+
+    data.catalogCardData = {
+        sysId: catalogSysId,
+        widgetTitle: widgetTitle,
+        widgetSysId: widgetSysId,
+        title: catItemDetails.name,
+        description: catItemDetails.short_description,
+        type: gs.getMessage('request'),
+        isFeatured: isFeatured,
+        image: image,
+        iconClass: 'fa fa-pencil-square-o',
+        target: target,
+        additionalInfo: additionalInfo,
+        url: pageUrl,
+        viewType: viewType,
+        table: catalogTable
+    };
+
+    data.widgetData = $sp.getWidget("content-card", data.catalogCardData);
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-19 10:47:44&lt;/sys_created_on&gt;&lt;sys_id&gt;ae5755942d94b010f87773c1799aba0f&lt;/sys_id&gt;&lt;sys_mod_count&gt;56&lt;/sys_mod_count&gt;&lt;sys_name&gt;Catalog Content&lt;/sys_name&gt;&lt;sys_package display_value="Employee Center" source="sn_ex_sp"&gt;4249e63a28d54d61bb6fbf61fd86cccb&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Center"&gt;4249e63a28d54d61bb6fbf61fd86cccb&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_ae5755942d94b010f87773c1799aba0f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-09-03 15:30:34&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="flex-display"&gt;
+  &lt;sp-widget widget="c.data.widgetData"&gt;&lt;/sp-widget&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-17 01:32:42</sys_created_on>
+        <sys_id>3b9a83649741021069a3b6fce053af50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>379a83649741021069a3b6fce053af4d</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_3b9a83649741021069a3b6fce053af50</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-17 01:32:42</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

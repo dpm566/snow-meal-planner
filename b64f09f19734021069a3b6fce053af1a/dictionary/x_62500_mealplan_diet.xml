@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1590ce179711021069a3b6fce053af1b" label="Diet" max_length="40" name="x_62500_mealplan_diet" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Description" max_length="1000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,pdf_cell_type=image" label="Image" max_length="40" name="image" type="user_image"/>
+        <element display="true" label="Name" max_length="100" name="name" type="string"/>
+    </element>
+</database>

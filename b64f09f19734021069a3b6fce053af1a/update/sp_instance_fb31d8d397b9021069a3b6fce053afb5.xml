@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="3">e13158d397b9021069a3b6fce053af34</sp_column>
+        <sp_widget display_value="Image with Title and Description">478f405397b9021069a3b6fce053af6a</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-01 07:53:09</sys_created_on>
+        <sys_id>fb31d8d397b9021069a3b6fce053afb5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Generate grocery list</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sp_instance_fb31d8d397b9021069a3b6fce053afb5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-01 08:02:44</sys_updated_on>
+        <title>Generate grocery list</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"image": {
+		"value": "x_62500_mealplan.shop_ingredients.jpg",
+		"displayValue": "x_62500_mealplan.shop_ingredients.jpg"
+	},
+	"title": {
+		"value": "Generate grocery list",
+		"displayValue": "Generate grocery list"
+	},
+	"description": {
+		"value": "List all the ingredients you need. Easy!",
+		"displayValue": "List all the ingredients you need. Easy!"
+	},
+	"link": {
+		"value": "",
+		"displayValue": ""
+	},
+	"link_title": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=fb31d8d397b9021069a3b6fce053afb5"/>
+</record_update>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description>If true, portal css would be in rem units</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.service_portal.resize_text.mp.enable_rem_conversion</name>
+        <read_roles/>
+        <suffix/>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-19 21:04:44</sys_created_on>
+        <sys_id>96531d2b9721c21069a3b6fce053afa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.service_portal.resize_text.mp.enable_rem_conversion</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_properties_96531d2b9721c21069a3b6fce053afa0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-19 21:04:44</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=96531d2b9721c21069a3b6fce053afa0"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</application>
+        <file_path/>
+        <instance_id>97b41742dbb27d9002d9172913961944</instance_id>
+        <instance_name>dev230132</instance_name>
+        <name>sys_properties_96531d2b9721c21069a3b6fce053afa0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>If true, portal css would be in rem units</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.service_portal.resize_text.mp.enable_rem_conversion</name>
+        <read_roles/>
+        <suffix/>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-19 21:04:44</sys_created_on>
+        <sys_id>96531d2b9721c21069a3b6fce053afa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.service_portal.resize_text.mp.enable_rem_conversion</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_properties_96531d2b9721c21069a3b6fce053afa0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-19 21:04:44</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=96531d2b9721c21069a3b6fce053afa0"/>
+</record_update>]]></payload>
+        <payload_hash>-1587568281</payload_hash>
+        <record_name>glide.service_portal.resize_text.mp.enable_rem_conversion</record_name>
+        <reverted_from/>
+        <source>9d5bf52f473982103f0c7f52d16d43d9</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-02 10:15:46</sys_created_on>
+        <sys_id>967bb96f473982103f0c7f52d16d4377</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f38cd8d200000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-02 10:15:46</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>927bb96f83398210c42b942d0db61a77</update_guid>
+        <update_guid_history>927bb96f83398210c42b942d0db61a77:0,2c0bbdeb0c398210a43e5d8145470d00:-1429746846,06b335afd1f5821000bda6b3dd93f705:0,86633d2f0bf582106a38d21dab0f5b0a:-1254099165,cb5f812b17358210be94b41fff26e5cc:0,a79e8d676b3582108006c6884bfb9c0d:-1847374929,d9024523f4f18210d0fe8259e7e83b1b:-1587568281</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-02 23:29:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>1689c059e1c049d6a252495682035199</sys_id>
+        <sys_metadata>96531d2b9721c21069a3b6fce053afa0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.service_portal.resize_text.mp.enable_rem_conversion</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_scope_delete display_value="Meal Planner">03cb3aa796df476a803ea65a8c71e844</sys_scope_delete>
+        <sys_update_name>sys_properties_96531d2b9721c21069a3b6fce053afa0</sys_update_name>
+        <sys_update_version display_value="sys_properties_96531d2b9721c21069a3b6fce053afa0">967bb96f473982103f0c7f52d16d4377</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-02 23:29:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

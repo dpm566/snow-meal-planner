@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>false</active>
+        <application display_value="Meal Planner">a8b1d5399734021069a3b6fce053af28</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>All</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_62500_mealplan_ingredient_store</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_62500_mealplan.reader</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-08 03:41:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2cb199799734021069a3b6fce053af6f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Ingredient Stores</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_app_module_2cb199799734021069a3b6fce053af6f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-20 07:14:22</sys_updated_on>
+        <timeline_page/>
+        <title>Ingredient Stores</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</application>
+        <file_path/>
+        <instance_id>eccd8fc5dbfe3dd038f1172913961987</instance_id>
+        <instance_name>dev226231</instance_name>
+        <name>sys_app_module_2cb199799734021069a3b6fce053af6f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>false</active><application display_value="Meal Planner">a8b1d5399734021069a3b6fce053af28</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>All</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_62500_mealplan_ingredient_store</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_62500_mealplan.reader</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-08 03:41:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2cb199799734021069a3b6fce053af6f</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Ingredient Stores</sys_name><sys_overrides/><sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package><sys_policy/><sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope><sys_update_name>sys_app_module_2cb199799734021069a3b6fce053af6f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-04-20 07:14:22</sys_updated_on><timeline_page/><title>Ingredient Stores</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-870154961</payload_hash>
+        <record_name>Ingredient Stores</record_name>
+        <reverted_from/>
+        <source>4095d9f99734021069a3b6fce053af90</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-20 07:14:22</sys_created_on>
+        <sys_id>50ee5b27972dc21069a3b6fce053af76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18efa5b2b530000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-20 07:14:22</sys_updated_on>
+        <type>Module</type>
+        <update_guid>d4ee5b27262dc210877203122244e775</update_guid>
+        <update_guid_history>d4ee5b27262dc210877203122244e775:-870154961,c21a736abbb00210324556ef4a2284b6:1915729659,1c0a336a88b002101318fb4be535dd9a:-180928676,12e9336afcb00210ededb6ad20d367eb:-1389267565,6cb19979b834021026954a848835ff70:-757756781</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">154cef4397f5021069a3b6fce053af47</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-01 05:11:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>19e8d5be3613492293c03f4333c952c4</sys_id>
+        <sys_metadata>2cb199799734021069a3b6fce053af6f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ingredient Stores</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_scope_delete display_value="Meal Planner">03cb3aa796df476a803ea65a8c71e844</sys_scope_delete>
+        <sys_update_name>sys_app_module_2cb199799734021069a3b6fce053af6f</sys_update_name>
+        <sys_update_version display_value="sys_app_module_2cb199799734021069a3b6fce053af6f">50ee5b27972dc21069a3b6fce053af76</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-01 05:11:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

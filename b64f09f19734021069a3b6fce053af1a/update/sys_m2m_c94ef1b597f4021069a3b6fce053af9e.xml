@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_m2m">
+    <sys_m2m action="INSERT_OR_UPDATE">
+        <from_table>x_62500_mealplan_recipe</from_table>
+        <m2m_from_field>x_62500_mealplan_recipe</m2m_from_field>
+        <m2m_from_label>Ingredients</m2m_from_label>
+        <m2m_table>x_62500_mealplan_m2m_recipe_ingredient</m2m_table>
+        <m2m_to_field>x_62500_mealplan_ingredient</m2m_to_field>
+        <m2m_to_label>Recipes</m2m_to_label>
+        <sys_class_name>sys_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-08 06:57:11</sys_created_on>
+        <sys_id>c94ef1b597f4021069a3b6fce053af9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_62500_mealplan_m2m_recipe_ingredient</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_m2m_c94ef1b597f4021069a3b6fce053af9e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-08 06:57:11</sys_updated_on>
+        <to_table>x_62500_mealplan_ingredient</to_table>
+    </sys_m2m>
+</record_update>
